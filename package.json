@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:ngx-default-image": "ng build ngx-default-image --configuration production",
+    "publish:ngx-default-image": "cd dist/ngx-default-image && npm publish"
+
   },
   "private": true,
   "dependencies": {
@@ -33,6 +36,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "ng-packagr": "^15.2.2",
     "typescript": "~4.9.4"
   }
 }
