@@ -6,6 +6,8 @@
 
 Alert component for angular projects. Creative alert message with mutiple color variance.
 
+[<img src="https://github.com/manoj10101996/resources/blob/main/ngx-default-image-advertise.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-default-image)
+
 ## Import
 
 Import the module on your `app.module.ts` file as follow.
@@ -22,7 +24,9 @@ After importing this library with `npm install ngx-alert-message`, go to the com
 
 ## just alert module
 
-`<ngx-just-alert [close]="close" [mode]="mode" [bold]="bold" [disabled]="'true'" [text]="text"></ngx-just-alert>`
+```
+<ngx-just-alert [close]="close" [mode]="mode" [bold]="bold" [disabled]="'true'" [text]="text"></ngx-just-alert>
+```
 
 ```
 close : (required) value shoule be `true | false`
@@ -36,11 +40,15 @@ text : (required) value shoule be `anything...`
 disabled : (optional) value shoule be `true | false`
 ```
 
-<img  src="https://raw.githubusercontent.com/manoj10101996/resources/main/ngx-alert-message.png"/>
+<img width="100%" src="https://raw.githubusercontent.com/manoj10101996/resources/main/ngx-alert-message.png"/>
+
+---
 
 ## Alert module
 
-`<ngx-alert [close]="close" [mode]="mode" [bold]="bold" [disabled]="'true'" [text]="text"></ngx-alert>`
+```
+<ngx-alert [close]="close" [mode]="mode" [bold]="bold" [disabled]="'true'" [text]="text"></ngx-alert>
+```
 
 ```
 close : (required) value shoule be `true | false`
@@ -54,7 +62,10 @@ text : (required) value shoule be `anything...`
 disabled : (optional) value shoule be `true | false`
 ```
 
+<img width="100%" src="https://raw.githubusercontent.com/manoj10101996/resources/main/ngx-alert-message-1.png"/>
 
-<img  src="https://raw.githubusercontent.com/manoj10101996/resources/main/ngx-alert-message-1.png"/>
+---
 
-[![Visit beforepost.com for awesome color palettes &  extract colors and text from any source](https://github.com/manoj10101996/resources/blob/main/npm-pack-beforepost.png?raw=true)](https://www.beforepost.com/)
+[<img src="https://github.com/manoj10101996/resources/blob/main/ngx-alert-message-advertise.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-alert-message)
+
+---
