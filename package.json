@@ -11,7 +11,10 @@
     "publish:ngx-default-image": "cd dist/ngx-default-image && npm publish",
 
     "build:ngx-resize-element": "ng build ngx-resize-element --configuration production",
-    "publish:ngx-resize-element": "cd dist/ngx-resize-element && npm publish"
+    "publish:ngx-resize-element": "cd dist/ngx-resize-element && npm publish",
+
+    "build:ngx-alert-message": "ng build ngx-alert-message --configuration production",
+    "publish:ngx-alert-message": "cd dist/ngx-alert-message && npm publish"
   },
   "private": true,
   "dependencies": {

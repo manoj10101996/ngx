@@ -1,0 +1,27 @@
+.just-close {
+  width: 6%;
+  font-weight: bolder;
+  text-align: center;
+  background-color: crimson;
+  color: white;
+  border-radius: 0px;
+  padding: 0;
+  display: grid;
+  align-items: center;
+}
+
+.just-content {
+  width: 95%;
+  padding: 0.6125rem 0.8125rem;
+}
+
+.just-container {
+  display: flex;
+  border-radius: 1;
+  border: 1px solid crimson;
+  /* border-radius: 9px; */
+  margin: 0.625rem 0rem;
+  color: white;
+  /* border-radius: 0.5125rem; */
+  box-shadow: 0px 0px 5px 5px whitesmoke;
+}

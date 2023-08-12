@@ -1,0 +1,8 @@
+<div class="alert-bar-ngx" [style.backgroundColor]="color" [style.color]="textColor"
+  [style.fontWeight]="bold === 'true' ? 'bold' : '100'" [style.opacity]="disabled === 'true' ? '0.5' : '1'"
+  [style.cursor]="disabled === 'true' ? 'not-allowed' : 'pointer'">
+  <span class="closeIcon" [hidden]="close === 'false'">
+    &#215;
+  </span>
+  {{ text }}
+</div>

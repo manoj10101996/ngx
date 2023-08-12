@@ -7,18 +7,22 @@ import { NgxDefaultImageModule } from 'projects/ngx-default-image/src/public-api
 import { NgxDefaultImageComponent } from './boards/ngx-default-image/ngx-default-image.component';
 import { NgxResizeElementComponent } from './boards/ngx-resize-element/ngx-resize-element.component';
 import { NgxResizeElementModule } from 'projects/ngx-resize-element/src/public-api';
+import { NgxAlertMessageComponent } from './boards/ngx-alert-message/ngx-alert-message.component';
+import { NgxAlertMessageModule } from 'projects/ngx-alert-message/src/public-api';
 
 @NgModule({
   declarations: [
     AppComponent,
     NgxDefaultImageComponent,
-    NgxResizeElementComponent
+    NgxResizeElementComponent,
+    NgxAlertMessageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgxDefaultImageModule,
-    NgxResizeElementModule
+    NgxResizeElementModule,
+    NgxAlertMessageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
