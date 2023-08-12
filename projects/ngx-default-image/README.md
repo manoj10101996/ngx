@@ -145,7 +145,7 @@ To use this package as a service `npm i ngx-default-image` install this on the r
 
 Then import the module as follow on imports array
 
-> NgxDeviceInfoModule
+> NgxDefaultImageModule
 
 ### Author
 

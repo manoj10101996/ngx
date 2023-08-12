@@ -1,24 +1,64 @@
-# NgxResizeElement
+ 
+<img width="256px" alt="ngx-resize-element" src="https://icon.beforepost.com/1A7C8YQZ-HH2QC99I-9GMJ2KB5.svg"/>
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+# ngx-resize-element (latest)
 
-## Code scaffolding
+- Angular library which provides a way resize Block level elements (div, p, etc...) using respective ruler at right bottom.
+  
+  
 
-Run `ng generate component component-name --project ngx-resize-element` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-resize-element`.
-> Note: Don't forget to add `--project ngx-resize-element` or else it will be added to the default project in your `angular.json` file. 
+[<img width="100%" src="https://github.com/manoj10101996/resources/blob/main/ngx-resize-element.png?raw=true
+"/>](https://codesandbox.io/s/wonderful-estrela-kp6gjx?file=/src/app/app.component.html)
 
-## Build
+---
 
-Run `ng build ngx-resize-element` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Import
 
-## Publishing
 
-After building your library with `ng build ngx-resize-element`, go to the dist folder `cd dist/ngx-resize-element` and run `npm publish`.
+Import the module on your `app.module.ts` file as follow.
 
-## Running unit tests
+> import { NgxResizeElementModule} from "ngx-resize-element";
 
-Run `ng test ngx-resize-element` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Further help
+### Add to imports
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+```
+imports: [
+  ...
+  NgxResizeElementModule
+  ...
+],
+```
+ 
+### Core function
+
+
+```
+<div class="card card-body my-3" ngxResize>
+  <div class="alert alert-danger m-0">
+    Welcome to resize
+  </div>
+</div>
+```
+
+     
+### Code integration
+
+To use this package as a service `npm i ngx-resize-element` install this on the root angular project .
+
+> Note: Don't forget to run this commend `npm i ngx-resize-element` on root folder or else it will throw error.
+
+Then import the module as follow on imports array
+
+> NgxResizeElementModule
+
+### Author
+
+Thanks in advance
+
+[**Manojkumar Muthukumar**](https://codesandbox.io/u/manoj10101996)
+
+Coimbatore
+
+[![Visit beforepost.com for awesome color palettes & extract colors and text from any source](https://github.com/manoj10101996/resources/blob/main/npm-pack-beforepost.png?raw=true)](https://www.beforepost.com/)
