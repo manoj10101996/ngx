@@ -13,6 +13,9 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
+      "ngx-alert-message": [
+        "dist/ngx-alert-message"
+      ],
       "ngx-default-image": [
         "dist/ngx-default-image"
       ],

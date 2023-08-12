@@ -1,0 +1,10 @@
+<div class="just-container" [style.border]="'1px solid ' + mode" [style.color]="mode"
+  [style.fontWeight]="bold === 'true' ? 'bold' : '100'" [style.opacity]="disabled === 'true' ? '0.5' : '1'"
+  [style.cursor]="disabled === 'true' ? 'not-allowed' : 'pointer'">
+  <div class="just-content">
+    {{ text }}
+  </div>
+  <div class="just-close" [style.backgroundColor]="mode" [style.color]="'white'">
+    <span>&#215;</span>
+  </div>
+</div>

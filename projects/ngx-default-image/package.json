@@ -12,6 +12,7 @@
     "name": "Manojkumar Muthukumar",
     "email": "manoj1010196@gmail.com"
   },
+  "icon": "https://icon.beforepost.com/EYK7RBDV-3E93PTQN-LSO3EATX.svg",
   "description": "Angular library which provides a way prevend image rendering when the image loading failed with custom replacement image and provide extracted meta info from the image.",
   "sideEffects": false,
   "keywords": [
