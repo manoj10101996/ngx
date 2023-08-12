@@ -1,0 +1,124 @@
+<!-- assets/BlackMarble_2016_928m_canada_s_labeled.png -->
+<div class="p-3">
+  <div class="row m-0">
+    <div class="col-8">
+      <img
+        src="https://burst.shopifycdn.com/photos/dog-fetching-disc.jpg?width=925&format=pjpg&exif=1&iptc=1%201x,%20https://burst.shopifycdn.com/photos/dog-fetching-disc.jpg?width=1850&format=pjpg&exif=1&iptc=1%202x"
+        NgxDefaultImage
+        (imageMetaInfo)="imageMetaInfo($event)"
+        class="w-100 rounded"
+        [imageURL]="imageURL"
+        alt="sample-image"
+      />
+    </div>
+    <div class="col-4">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <small>
+            Is valid:
+          </small>
+          <span class="badge bg-light text-dark">
+            {{imageMeta.isValidImage}}
+          </span>
+        </li>
+        <li class="list-group-item">
+          <small>
+            AspectRatio:
+          </small>
+          <span class="badge bg-light text-dark">
+            {{imageMeta.aspectRatio}}
+          </span>
+        </li>
+        <li class="list-group-item">
+          <small>
+            Height:
+          </small>
+          <span class="badge bg-light text-dark">
+            {{imageMeta.height | number: '1.0-0' }}px
+          </span>
+        </li>
+        <li class="list-group-item">
+          <small>
+            Width:
+          </small>
+          <span class="badge bg-light text-dark">
+            {{imageMeta.width | number: '1.0-0' }}px
+          </span>
+        </li>
+        <li class="list-group-item">
+          <small>
+            Rendered Width:
+          </small>
+          <span class="badge bg-light text-dark">
+            {{imageMeta.rwidth | number: '1.0-0' }}
+          </span>
+        </li>
+        <li class="list-group-item">
+          <small>
+            Rendered Height:
+          </small>
+          <span class="badge bg-light text-dark">
+            {{imageMeta.rheight | number: '1.0-0' }}
+          </span>
+        </li>
+        <li class="list-group-item">
+          <small>
+            Rendered Time:
+          </small>
+          <span class="badge bg-light text-dark">
+            {{imageMeta.renderTime | number: '1.0-0'}} Ms.
+          </span>
+        </li>
+        <li class="list-group-item">
+          <small>
+            ( x,y ):
+          </small>
+          <span class="badge bg-light text-dark">
+            ( {{imageMeta.x}}, {{imageMeta.y}} )
+          </span>
+        </li>
+        <li class="list-group-item">
+          <small>
+            ( top,bottom ):
+          </small>
+          <span class="badge bg-light text-dark">
+            ( {{imageMeta.top | number: '1.0-0' }}, {{imageMeta.bottom |
+            number: '1.0-0' }} )
+          </span>
+        </li>
+        <li class="list-group-item">
+          <small>
+            ( left,right ):
+          </small>
+          <span class="badge bg-light text-dark">
+            ( {{imageMeta.left | number: '1.0-0' }}, {{imageMeta.right |
+            number: '1.0-0' }} )
+          </span>
+        </li>
+        <li class="list-group-item">
+          <small>
+            Loaded On:
+          </small>
+          <span class="badge bg-light text-dark">
+            {{imageMeta.datedOn.loadedOn | date: 'fullTime'}}
+          </span>
+        </li>
+
+        <li class="list-group-item">
+          <small>
+            Rendered On:
+          </small>
+          <span class="badge bg-light text-dark">
+            {{imageMeta.datedOn.renderedOn | date: 'fullTime'}}
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card card-body my-3" NgxResize>
+    <div class="alert alert-danger m-0">
+      Welcome to resize
+    </div>
+  </div>
+</div>

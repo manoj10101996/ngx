@@ -1,0 +1,31 @@
+{
+  "name": "ngx-resize-element",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^15.2.0",
+    "@angular/core": "^15.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "author": {
+    "name": "Manojkumar Muthukumar",
+    "email": "manoj1010196@gmail.com"
+  },
+  "description": "Angular library which provides a way resize Block level elements (div, p, etc...) using respective ruler at right bottom.",
+  "sideEffects": false,
+  "keywords": [
+    "angular",
+    "ngx",
+    "ng",
+    "resize",
+    "ngx-resize-element",
+    "manoj1010196",
+    "resize-element",
+    "resize-div",
+    "resizer",
+    "ruler",
+    "npm"
+  ],
+  "license": "MIT"
+}
