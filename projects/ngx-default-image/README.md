@@ -5,11 +5,12 @@
 - Angular library which provides a way prevend image rendering when the image loading failed with custom replacement image.
 
 - Get extracted meta info from the image.
- 
-## Preview with CodeSandbox
 
-[Demo with CodeSandbox](https://codesandbox.io/s/wonderful-estrela-kp6gjx?file=/src/app/app.component.html)
+---
 
+ [<img src="https://github.com/manoj10101996/resources/blob/main/ngx-default-image-advertise.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-default-image)
+
+---
 
 [<img width="100%" src="https://github.com/manoj10101996/resources/blob/main/ngx-default-image.png?raw=true
 "/>](https://codesandbox.io/s/wonderful-estrela-kp6gjx?file=/src/app/app.component.html)
@@ -147,12 +148,6 @@ Then import the module as follow on imports array
 
 > NgxDefaultImageModule
 
-### Author
+---
 
-Thanks in advance
-
-[**Manojkumar Muthukumar**](https://codesandbox.io/u/manoj10101996)
-
-Coimbatore
-
-[![Visit beforepost.com for awesome color palettes & extract colors and text from any source](https://github.com/manoj10101996/resources/blob/main/npm-pack-beforepost.png?raw=true)](https://www.beforepost.com/)
+[<img src="https://github.com/manoj10101996/resources/blob/main/ngx-default-image-advertise.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-default-image)
