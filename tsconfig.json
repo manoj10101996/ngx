@@ -15,6 +15,9 @@
     "paths": {
       "ngx-default-image": [
         "dist/ngx-default-image"
+      ],
+      "ngx-resize-element": [
+        "dist/ngx-resize-element"
       ]
     },
     "declaration": false,
