@@ -39,6 +39,9 @@
       ],
       "ngx-resize-element": [
         "dist/ngx-resize-element"
+      ],
+      "ngx-strings": [
+        "dist/ngx-strings"
       ]
     },
     "declaration": false,

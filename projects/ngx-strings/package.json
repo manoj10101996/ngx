@@ -1,0 +1,42 @@
+{
+  "name": "ngx-strings",
+  "author": {
+    "name": "Manojkumar Muthukumar",
+    "email": "manoj1010196@gmail.com"
+  },
+  "description": "String operations for angular projects.",
+  "version": "3.0.1",
+  "peerDependencies": {
+    "@angular/common": "^15.2.0",
+    "@angular/core": "^15.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "icon": "https://icon.beforepost.com/LG8MMQ4V-O3IBIAKV-5J0WBZV2.svg",
+  "keywords": [
+    "angular",
+    "ngx",
+    "string",
+    "ngx-strings",
+    "email",
+    "css",
+    "validations",
+    "case",
+    "uppercase",
+    "lowercase",
+    "titlecase",
+    "initialcase",
+    "linelimit",
+    "string-splice",
+    "string-slice",
+    "emailcut",
+    "email-slice",
+    "email-splice",
+    "strings",
+    "operations",
+    "manoj10101996",
+    "uiconfig"
+  ],
+  "license": "MIT"
+}
