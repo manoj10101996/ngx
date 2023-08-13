@@ -14,6 +14,8 @@ import { NgxCheckPermissionComponent } from './boards/ngx-check-permission/ngx-c
 import { NgxCheckPermissionModule } from 'projects/ngx-check-permission/src/public-api';
 import { NgxColorConverterComponent } from './boards/ngx-color-converter/ngx-color-converter.component';
 import { NgxColorConverterModule } from 'projects/ngx-color-converter/src/public-api';
+import { NgxDeviceInfoComponent } from './boards/ngx-device-info/ngx-device-info.component';
+import { NgxDeviceInfoModule } from 'projects/ngx-device-info/src/public-api';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { NgxColorConverterModule } from 'projects/ngx-color-converter/src/public
     NgxResizeElementComponent,
     NgxAlertMessageComponent,
     NgxCheckPermissionComponent,
-    NgxColorConverterComponent
+    NgxColorConverterComponent,
+    NgxDeviceInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { NgxColorConverterModule } from 'projects/ngx-color-converter/src/public
     NgxAlertMessageModule,
     NgxArrayModule,
     NgxCheckPermissionModule,
-    NgxColorConverterModule
+    NgxColorConverterModule,
+    NgxDeviceInfoModule
   ],
   providers: [],
   bootstrap: [AppComponent]

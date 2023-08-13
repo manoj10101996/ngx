@@ -23,7 +23,10 @@
     "publish:ngx-check-permission": "cd dist/ngx-check-permission && npm publish",
 
     "build:ngx-color-converter": "ng build ngx-color-converter --configuration production",
-    "publish:ngx-color-converter": "cd dist/ngx-color-converter && npm publish"
+    "publish:ngx-color-converter": "cd dist/ngx-color-converter && npm publish",
+
+    "build:ngx-device-info": "ng build ngx-device-info --configuration production",
+    "publish:ngx-device-info": "cd dist/ngx-device-info && npm publish"
   },
   "private": true,
   "dependencies": {
