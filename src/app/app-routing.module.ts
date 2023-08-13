@@ -6,6 +6,7 @@ import { NgxAlertMessageComponent } from './boards/ngx-alert-message/ngx-alert-m
 import { NgxArrayComponent } from './boards/ngx-array/ngx-array.component';
 import { NgxCheckPermissionComponent } from './boards/ngx-check-permission/ngx-check-permission.component';
 import { NgxColorConverterComponent } from './boards/ngx-color-converter/ngx-color-converter.component';
+import { NgxDeviceInfoComponent } from './boards/ngx-device-info/ngx-device-info.component';
 
 const routes: Routes = [
   { path: '', component: NgxDefaultImageComponent },
@@ -15,7 +16,7 @@ const routes: Routes = [
   { path: 'ngx-array', component: NgxArrayComponent },
   { path: 'ngx-check-permission', component: NgxCheckPermissionComponent },
   { path: 'ngx-color-converter', component: NgxColorConverterComponent },
-
+  { path: 'ngx-device-info', component: NgxDeviceInfoComponent },
 ];
 
 @NgModule({

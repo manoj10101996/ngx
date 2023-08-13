@@ -28,6 +28,9 @@
       "ngx-default-image": [
         "dist/ngx-default-image"
       ],
+      "ngx-device-info": [
+        "dist/ngx-device-info"
+      ],
       "ngx-resize-element": [
         "dist/ngx-resize-element"
       ]
