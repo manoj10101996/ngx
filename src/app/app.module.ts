@@ -21,6 +21,8 @@ import { NgxLogsModule } from 'projects/ngx-logs/src/public-api';
 import { NgxRandomComponent } from './boards/ngx-random/ngx-random.component';
 import { NgxStringsComponent } from './boards/ngx-strings/ngx-strings.component';
 import { NgxStringsModule } from 'projects/ngx-strings/src/public-api';
+import { NgxTagsInputBoxComponent } from './boards/ngx-tags-input-box/ngx-tags-input-box.component';
+import { NgxTagsModule } from 'projects/ngx-tags-input-box/src/public-api';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { NgxStringsModule } from 'projects/ngx-strings/src/public-api';
     NgxDeviceInfoComponent,
     NgxLogsComponent,
     NgxRandomComponent,
-    NgxStringsComponent
+    NgxStringsComponent,
+    NgxTagsInputBoxComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,8 @@ import { NgxStringsModule } from 'projects/ngx-strings/src/public-api';
     NgxColorConverterModule,
     NgxDeviceInfoModule,
     NgxLogsModule,
-    NgxStringsModule
+    NgxStringsModule,
+    NgxTagsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

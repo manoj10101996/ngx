@@ -42,6 +42,9 @@
       ],
       "ngx-strings": [
         "dist/ngx-strings"
+      ],
+      "ngx-tags-input-box": [
+        "dist/ngx-tags-input-box"
       ]
     },
     "declaration": false,
