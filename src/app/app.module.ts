@@ -19,6 +19,8 @@ import { NgxDeviceInfoModule } from 'projects/ngx-device-info/src/public-api';
 import { NgxLogsComponent } from './boards/ngx-logs/ngx-logs.component';
 import { NgxLogsModule } from 'projects/ngx-logs/src/public-api';
 import { NgxRandomComponent } from './boards/ngx-random/ngx-random.component';
+import { NgxStringsComponent } from './boards/ngx-strings/ngx-strings.component';
+import { NgxStringsModule } from 'projects/ngx-strings/src/public-api';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { NgxRandomComponent } from './boards/ngx-random/ngx-random.component';
     NgxColorConverterComponent,
     NgxDeviceInfoComponent,
     NgxLogsComponent,
-    NgxRandomComponent
+    NgxRandomComponent,
+    NgxStringsComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { NgxRandomComponent } from './boards/ngx-random/ngx-random.component';
     NgxCheckPermissionModule,
     NgxColorConverterModule,
     NgxDeviceInfoModule,
-    NgxLogsModule
+    NgxLogsModule,
+    NgxStringsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

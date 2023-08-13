@@ -9,6 +9,7 @@ import { NgxColorConverterComponent } from './boards/ngx-color-converter/ngx-col
 import { NgxDeviceInfoComponent } from './boards/ngx-device-info/ngx-device-info.component';
 import { NgxLogsComponent } from './boards/ngx-logs/ngx-logs.component';
 import { NgxRandomComponent } from './boards/ngx-random/ngx-random.component';
+import { NgxStringsComponent } from './boards/ngx-strings/ngx-strings.component';
 
 const routes: Routes = [
   { path: '', component: NgxDefaultImageComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'ngx-device-info', component: NgxDeviceInfoComponent },
   { path: 'ngx-logs', component: NgxLogsComponent },
   { path: 'ngx-random', component: NgxRandomComponent },
+  { path: 'ngx-strings', component: NgxStringsComponent },
 ];
 
 @NgModule({

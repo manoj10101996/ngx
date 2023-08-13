@@ -32,7 +32,10 @@
     "publish:ngx-logs": "cd dist/ngx-logs && npm publish",
 
     "build:ngx-random": "ng build ngx-random --configuration production",
-    "publish:ngx-random": "cd dist/ngx-random && npm publish"
+    "publish:ngx-random": "cd dist/ngx-random && npm publish",
+
+    "build:ngx-strings": "ng build ngx-strings --configuration production",
+    "publish:ngx-strings": "cd dist/ngx-strings && npm publish"
   },
   "private": true,
   "dependencies": {
