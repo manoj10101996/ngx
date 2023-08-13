@@ -1,0 +1,35 @@
+{
+  "name": "ngx-random",
+  "author": {
+    "name": "Manojkumar Muthukumar",
+    "email": "manoj1010196@gmail.com"
+  },
+  "description": "Generates specified length of strings / digits for password | Otp | unique identification purposes",
+  "version": "3.0.1",
+  "peerDependencies": {
+    "@angular/common": "^15.2.0",
+    "@angular/core": "^15.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "icon": "https://icon.beforepost.com/VQF5LQAJ-W6WFR2Q7-7VTTX8CA.svg",
+  "keywords": [
+    "angular",
+    "ngx",
+    "ng9",
+    "log",
+    "random",
+    "string",
+    "number",
+    "ngx-random",
+    "digit",
+    "password",
+    "product",
+    "protect",
+    "manoj10101996",
+    "uiconfig"
+  ],
+  "license": "MIT",
+  "sideEffects": false
+}

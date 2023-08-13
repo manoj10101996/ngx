@@ -34,6 +34,9 @@
       "ngx-logs": [
         "dist/ngx-logs"
       ],
+      "ngx-random": [
+        "dist/ngx-random"
+      ],
       "ngx-resize-element": [
         "dist/ngx-resize-element"
       ]

@@ -8,6 +8,7 @@ import { NgxCheckPermissionComponent } from './boards/ngx-check-permission/ngx-c
 import { NgxColorConverterComponent } from './boards/ngx-color-converter/ngx-color-converter.component';
 import { NgxDeviceInfoComponent } from './boards/ngx-device-info/ngx-device-info.component';
 import { NgxLogsComponent } from './boards/ngx-logs/ngx-logs.component';
+import { NgxRandomComponent } from './boards/ngx-random/ngx-random.component';
 
 const routes: Routes = [
   { path: '', component: NgxDefaultImageComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'ngx-color-converter', component: NgxColorConverterComponent },
   { path: 'ngx-device-info', component: NgxDeviceInfoComponent },
   { path: 'ngx-logs', component: NgxLogsComponent },
+  { path: 'ngx-random', component: NgxRandomComponent },
 ];
 
 @NgModule({
