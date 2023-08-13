@@ -14,7 +14,10 @@
     "publish:ngx-resize-element": "cd dist/ngx-resize-element && npm publish",
 
     "build:ngx-alert-message": "ng build ngx-alert-message --configuration production",
-    "publish:ngx-alert-message": "cd dist/ngx-alert-message && npm publish"
+    "publish:ngx-alert-message": "cd dist/ngx-alert-message && npm publish",
+
+    "build:ngx-array": "ng build ngx-array --configuration production",
+    "publish:ngx-array": "cd dist/ngx-array && npm publish"
   },
   "private": true,
   "dependencies": {

@@ -9,6 +9,7 @@ import { NgxResizeElementComponent } from './boards/ngx-resize-element/ngx-resiz
 import { NgxResizeElementModule } from 'projects/ngx-resize-element/src/public-api';
 import { NgxAlertMessageComponent } from './boards/ngx-alert-message/ngx-alert-message.component';
 import { NgxAlertMessageModule } from 'projects/ngx-alert-message/src/public-api';
+import { NgxArrayModule } from 'projects/ngx-array/src/public-api';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NgxAlertMessageModule } from 'projects/ngx-alert-message/src/public-api
     AppRoutingModule,
     NgxDefaultImageModule,
     NgxResizeElementModule,
-    NgxAlertMessageModule
+    NgxAlertMessageModule,
+    NgxArrayModule
   ],
   providers: [],
   bootstrap: [AppComponent]

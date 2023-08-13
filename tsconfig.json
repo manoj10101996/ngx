@@ -16,6 +16,9 @@
       "ngx-alert-message": [
         "dist/ngx-alert-message"
       ],
+      "ngx-array": [
+        "dist/ngx-array"
+      ],
       "ngx-default-image": [
         "dist/ngx-default-image"
       ],
