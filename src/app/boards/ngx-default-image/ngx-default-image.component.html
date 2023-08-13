@@ -4,14 +4,10 @@
     <div class="col-8">
       <img
         src="https://burst.shopifycdn.com/photos/dog-fetching-disc.jpg?width=925&format=pjpg&exif=1&iptc=1%201x,%20https://burst.shopifycdn.com/photos/dog-fetching-disc.jpg?width=1850&format=pjpg&exif=1&iptc=1%202x"
-        NgxDefaultImage
-        (imageMetaInfo)="imageMetaInfo($event)"
-        class="w-100 rounded"
-        [imageURL]="imageURL"
-        alt="sample-image"
-      />
+        NgxDefaultImage (imageMetaInfo)="imageMetaInfo($event)" class="w-100 rounded" [imageURL]="imageURL"
+        alt="sample-image" />
     </div>
-    <div class="col-4">
+    <div class="col-4" *ngIf="imageMeta">
       <ul class="list-group">
         <li class="list-group-item">
           <small>

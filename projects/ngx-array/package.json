@@ -1,0 +1,36 @@
+{
+  "name": "ngx-array",
+  "author": {
+    "name": "Manojkumar Muthukumar",
+    "email": "manoj1010196@gmail.com"
+  },
+  "description": "Array class is a global object that is used in the construction of arrays; which are high-level, list-like objects.",
+  "version": "3.0.3",
+  "peerDependencies": {
+    "@angular/common": "^15.2.0",
+    "@angular/core": "^15.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "icon": "https://icon.beforepost.com/VYJ57IDB-D5QBG9K9-CXN7I5MX.svg",
+  "keywords": [
+    "angular",
+    "ngx",
+    "methods",
+    "min",
+    "max",
+    "array",
+    "splice",
+    "sort",
+    "ngx-array",
+    "concat",
+    "index",
+    "objects",
+    "javascript",
+    "manoj10101996",
+    "uiconfig"
+  ],
+  "license": "MIT",
+  "sideEffects": false
+}
