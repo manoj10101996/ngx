@@ -12,6 +12,8 @@ import { NgxAlertMessageModule } from 'projects/ngx-alert-message/src/public-api
 import { NgxArrayModule } from 'projects/ngx-array/src/public-api';
 import { NgxCheckPermissionComponent } from './boards/ngx-check-permission/ngx-check-permission.component';
 import { NgxCheckPermissionModule } from 'projects/ngx-check-permission/src/public-api';
+import { NgxColorConverterComponent } from './boards/ngx-color-converter/ngx-color-converter.component';
+import { NgxColorConverterModule } from 'projects/ngx-color-converter/src/public-api';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { NgxCheckPermissionModule } from 'projects/ngx-check-permission/src/publ
     NgxDefaultImageComponent,
     NgxResizeElementComponent,
     NgxAlertMessageComponent,
-    NgxCheckPermissionComponent
+    NgxCheckPermissionComponent,
+    NgxColorConverterComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { NgxCheckPermissionModule } from 'projects/ngx-check-permission/src/publ
     NgxResizeElementModule,
     NgxAlertMessageModule,
     NgxArrayModule,
-    NgxCheckPermissionModule
+    NgxCheckPermissionModule,
+    NgxColorConverterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -22,6 +22,9 @@
       "ngx-check-permission": [
         "dist/ngx-check-permission"
       ],
+      "ngx-color-converter": [
+        "dist/ngx-color-converter"
+      ],
       "ngx-default-image": [
         "dist/ngx-default-image"
       ],

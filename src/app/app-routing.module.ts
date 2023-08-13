@@ -5,6 +5,7 @@ import { NgxResizeElementComponent } from './boards/ngx-resize-element/ngx-resiz
 import { NgxAlertMessageComponent } from './boards/ngx-alert-message/ngx-alert-message.component';
 import { NgxArrayComponent } from './boards/ngx-array/ngx-array.component';
 import { NgxCheckPermissionComponent } from './boards/ngx-check-permission/ngx-check-permission.component';
+import { NgxColorConverterComponent } from './boards/ngx-color-converter/ngx-color-converter.component';
 
 const routes: Routes = [
   { path: '', component: NgxDefaultImageComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'ngx-alert-message', component: NgxAlertMessageComponent },
   { path: 'ngx-array', component: NgxArrayComponent },
   { path: 'ngx-check-permission', component: NgxCheckPermissionComponent },
+  { path: 'ngx-color-converter', component: NgxColorConverterComponent },
 
 ];
 
