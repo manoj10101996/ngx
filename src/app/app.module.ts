@@ -18,6 +18,7 @@ import { NgxDeviceInfoComponent } from './boards/ngx-device-info/ngx-device-info
 import { NgxDeviceInfoModule } from 'projects/ngx-device-info/src/public-api';
 import { NgxLogsComponent } from './boards/ngx-logs/ngx-logs.component';
 import { NgxLogsModule } from 'projects/ngx-logs/src/public-api';
+import { NgxRandomComponent } from './boards/ngx-random/ngx-random.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NgxLogsModule } from 'projects/ngx-logs/src/public-api';
     NgxCheckPermissionComponent,
     NgxColorConverterComponent,
     NgxDeviceInfoComponent,
-    NgxLogsComponent
+    NgxLogsComponent,
+    NgxRandomComponent
   ],
   imports: [
     BrowserModule,

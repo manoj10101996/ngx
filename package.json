@@ -29,7 +29,10 @@
     "publish:ngx-device-info": "cd dist/ngx-device-info && npm publish",
 
     "build:ngx-logs": "ng build ngx-logs --configuration production",
-    "publish:ngx-logs": "cd dist/ngx-logs && npm publish"
+    "publish:ngx-logs": "cd dist/ngx-logs && npm publish",
+
+    "build:ngx-random": "ng build ngx-random --configuration production",
+    "publish:ngx-random": "cd dist/ngx-random && npm publish"
   },
   "private": true,
   "dependencies": {
