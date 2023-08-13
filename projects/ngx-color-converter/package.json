@@ -1,0 +1,63 @@
+{
+  "name": "ngx-color-converter",
+  "author": {
+    "name": "Manojkumar Muthukumar",
+    "email": "manoj1010196@gmail.com"
+  },
+  "description": "Convert your color value to different variants. Color is the aspect of things that is caused by differing qualities of light being reflected or emitted by them.",
+  "version": "3.0.1",
+  "peerDependencies": {
+    "@angular/common": "^15.2.0",
+    "@angular/core": "^15.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "icon": "https://icon.beforepost.com/EYK7RBDV-3E93PTQN-LSO3EATX.svg",
+  "keywords": [
+    "angular",
+    "ngx",
+    "color",
+    "rgb",
+    "red",
+    "green",
+    "blue",
+    "cyan",
+    "magenta",
+    "yellow",
+    "black",
+    "hue",
+    "saturation",
+    "lightness",
+    "blackness",
+    "rgba",
+    "hex",
+    "ngx-color-converter",
+    "color-converter",
+    "ncol",
+    "hsl",
+    "cymk",
+    "hsla",
+    "hslToRgb",
+    "hueToRgb",
+    "hwbToRgb",
+    "cmykToRgb",
+    "ncolToRgb",
+    "hueToNcol",
+    "ncsToRgb",
+    "rgbToHsl",
+    "rgbToHwb",
+    "rgbToCmyk",
+    "manoj10101996",
+    "uiconfig",
+    "colord",
+    "colors",
+    "color",
+    "colour",
+    "color-wheel",
+    "picker",
+    "color-picker"
+  ],
+  "license": "MIT",
+  "sideEffects": false
+}

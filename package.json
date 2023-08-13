@@ -20,7 +20,10 @@
     "publish:ngx-array": "cd dist/ngx-array && npm publish",
 
     "build:ngx-check-permission": "ng build ngx-check-permission --configuration production",
-    "publish:ngx-check-permission": "cd dist/ngx-check-permission && npm publish"
+    "publish:ngx-check-permission": "cd dist/ngx-check-permission && npm publish",
+
+    "build:ngx-color-converter": "ng build ngx-color-converter --configuration production",
+    "publish:ngx-color-converter": "cd dist/ngx-color-converter && npm publish"
   },
   "private": true,
   "dependencies": {
