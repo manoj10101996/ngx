@@ -31,6 +31,9 @@
       "ngx-device-info": [
         "dist/ngx-device-info"
       ],
+      "ngx-logs": [
+        "dist/ngx-logs"
+      ],
       "ngx-resize-element": [
         "dist/ngx-resize-element"
       ]
