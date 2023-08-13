@@ -1,0 +1,34 @@
+{
+  "name": "ngx-logs",
+  "author": {
+    "name": "Manojkumar Muthukumar",
+    "email": "manoj1010196@gmail.com"
+  },
+  "description": "A Web console is a tool which is mainly used to log information associated with a web page like: network requests, JavaScript, security errors, warnings, CSS etc. It enables us to interact with a web page by executing JavaScript expression in the contents of the page.",
+  "version": "3.0.1",
+  "peerDependencies": {
+    "@angular/common": "^15.2.0",
+    "@angular/core": "^15.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "icon": "https://icon.beforepost.com/1S97FDGY-HWPHWB61-5MT8XLUK.svg",
+  "keywords": [
+    "angular",
+    "ngx",
+    "log",
+    "console",
+    "warn",
+    "error",
+    "ngx-logs",
+    "trace",
+    "info",
+    "table",
+    "consolelogs",
+    "manoj10101996",
+    "uiconfig"
+  ],
+  "license": "MIT",
+  "sideEffects": false
+}

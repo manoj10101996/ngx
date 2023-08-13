@@ -26,7 +26,10 @@
     "publish:ngx-color-converter": "cd dist/ngx-color-converter && npm publish",
 
     "build:ngx-device-info": "ng build ngx-device-info --configuration production",
-    "publish:ngx-device-info": "cd dist/ngx-device-info && npm publish"
+    "publish:ngx-device-info": "cd dist/ngx-device-info && npm publish",
+
+    "build:ngx-logs": "ng build ngx-logs --configuration production",
+    "publish:ngx-logs": "cd dist/ngx-logs && npm publish"
   },
   "private": true,
   "dependencies": {

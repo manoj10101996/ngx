@@ -16,6 +16,8 @@ import { NgxColorConverterComponent } from './boards/ngx-color-converter/ngx-col
 import { NgxColorConverterModule } from 'projects/ngx-color-converter/src/public-api';
 import { NgxDeviceInfoComponent } from './boards/ngx-device-info/ngx-device-info.component';
 import { NgxDeviceInfoModule } from 'projects/ngx-device-info/src/public-api';
+import { NgxLogsComponent } from './boards/ngx-logs/ngx-logs.component';
+import { NgxLogsModule } from 'projects/ngx-logs/src/public-api';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { NgxDeviceInfoModule } from 'projects/ngx-device-info/src/public-api';
     NgxAlertMessageComponent,
     NgxCheckPermissionComponent,
     NgxColorConverterComponent,
-    NgxDeviceInfoComponent
+    NgxDeviceInfoComponent,
+    NgxLogsComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { NgxDeviceInfoModule } from 'projects/ngx-device-info/src/public-api';
     NgxArrayModule,
     NgxCheckPermissionModule,
     NgxColorConverterModule,
-    NgxDeviceInfoModule
+    NgxDeviceInfoModule,
+    NgxLogsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
