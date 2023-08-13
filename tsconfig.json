@@ -19,6 +19,9 @@
       "ngx-array": [
         "dist/ngx-array"
       ],
+      "ngx-check-permission": [
+        "dist/ngx-check-permission"
+      ],
       "ngx-default-image": [
         "dist/ngx-default-image"
       ],

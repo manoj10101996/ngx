@@ -10,13 +10,16 @@ import { NgxResizeElementModule } from 'projects/ngx-resize-element/src/public-a
 import { NgxAlertMessageComponent } from './boards/ngx-alert-message/ngx-alert-message.component';
 import { NgxAlertMessageModule } from 'projects/ngx-alert-message/src/public-api';
 import { NgxArrayModule } from 'projects/ngx-array/src/public-api';
+import { NgxCheckPermissionComponent } from './boards/ngx-check-permission/ngx-check-permission.component';
+import { NgxCheckPermissionModule } from 'projects/ngx-check-permission/src/public-api';
 
 @NgModule({
   declarations: [
     AppComponent,
     NgxDefaultImageComponent,
     NgxResizeElementComponent,
-    NgxAlertMessageComponent
+    NgxAlertMessageComponent,
+    NgxCheckPermissionComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import { NgxArrayModule } from 'projects/ngx-array/src/public-api';
     NgxDefaultImageModule,
     NgxResizeElementModule,
     NgxAlertMessageModule,
-    NgxArrayModule
+    NgxArrayModule,
+    NgxCheckPermissionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
