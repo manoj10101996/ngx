@@ -35,7 +35,10 @@
     "publish:ngx-random": "cd dist/ngx-random && npm publish",
 
     "build:ngx-strings": "ng build ngx-strings --configuration production",
-    "publish:ngx-strings": "cd dist/ngx-strings && npm publish"
+    "publish:ngx-strings": "cd dist/ngx-strings && npm publish",
+
+    "build:ngx-tags-input-box": "ng build ngx-tags-input-box --configuration production",
+    "publish:ngx-tags-input-box": "cd dist/ngx-tags-input-box && npm publish"
   },
   "private": true,
   "dependencies": {

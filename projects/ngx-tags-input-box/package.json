@@ -1,0 +1,35 @@
+{
+  "name": "ngx-tags-input-box",
+  "author": {
+    "name": "Manojkumar Muthukumar",
+    "email": "manoj1010196@gmail.com"
+  },
+  "description": "A tags input is a UI component which allows the user to insert multiple entries as tags into an input field. Also known as Tagging/Tokenizing system. You can find this system on most major websites.",
+  "version": "3.0.1",
+  "peerDependencies": {
+    "@angular/common": "^15.2.0",
+    "@angular/core": "^15.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "icon": "https://icon.beforepost.com/I0H3FAPV-KSRZF8JQ-6S9AGVHY.svg",
+  "keywords": [
+    "angular",
+    "ngx",
+    "tags",
+    "input",
+    "input-tag",
+    "multiple",
+    "chips",
+    "label",
+    "select",
+    "tag",
+    "input-tags",
+    "tags-input",
+    "ngx-tags-input-box",
+    "manoj10101996",
+    "uiconfig"
+  ],
+  "license": "MIT"
+}

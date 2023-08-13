@@ -10,6 +10,7 @@ import { NgxDeviceInfoComponent } from './boards/ngx-device-info/ngx-device-info
 import { NgxLogsComponent } from './boards/ngx-logs/ngx-logs.component';
 import { NgxRandomComponent } from './boards/ngx-random/ngx-random.component';
 import { NgxStringsComponent } from './boards/ngx-strings/ngx-strings.component';
+import { NgxTagsModule } from 'projects/ngx-tags-input-box/src/public-api';
 
 const routes: Routes = [
   { path: '', component: NgxDefaultImageComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'ngx-logs', component: NgxLogsComponent },
   { path: 'ngx-random', component: NgxRandomComponent },
   { path: 'ngx-strings', component: NgxStringsComponent },
+  { path: 'ngx-tags-input-box', component: NgxTagsModule },
 ];
 
 @NgModule({
