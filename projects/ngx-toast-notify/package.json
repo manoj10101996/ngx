@@ -1,0 +1,51 @@
+{
+  "name": "ngx-toast-notify",
+  "author": {
+    "name": "Manojkumar Muthukumar",
+    "email": "manoj1010196@gmail.com"
+  },
+  "description": "Push notifications to your visitors with a toast, a lightweight and easily customizable alert message with custom theme based.",
+  "version": "3.0.1",
+  "peerDependencies": {
+    "@angular/common": "^15.2.0",
+    "@angular/core": "^15.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "icon": "https://icon.beforepost.com/TAQMDH9I-2D87SQAT-7JIS54O8.svg",
+  "keywords": [
+    "angular",
+    "material",
+    "bootstrap",
+    "ngx-toast",
+    "ngx-toastr",
+    "ngx",
+    "alert",
+    "toast",
+    "notification",
+    "push",
+    "push-notification",
+    "browser",
+    "inwoke",
+    "push-notification",
+    "error",
+    "show",
+    "popper",
+    "awake",
+    "log",
+    "interact",
+    "modal",
+    "pophover",
+    "active",
+    "ngx-toast-notify",
+    "javascript",
+    "manoj10101996",
+    "uiconfig",
+    "sweetalert",
+    "dialog",
+    "pepper"
+  ],
+  "license": "MIT",
+  "sideEffects": false
+}

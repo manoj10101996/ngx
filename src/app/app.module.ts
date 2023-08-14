@@ -23,6 +23,8 @@ import { NgxStringsComponent } from './boards/ngx-strings/ngx-strings.component'
 import { NgxStringsModule } from 'projects/ngx-strings/src/public-api';
 import { NgxTagsInputBoxComponent } from './boards/ngx-tags-input-box/ngx-tags-input-box.component';
 import { NgxTagsModule } from 'projects/ngx-tags-input-box/src/public-api';
+import { NgxToastNotifyComponent } from './boards/ngx-toast-notify/ngx-toast-notify.component';
+import { NgxToastNotifyModule } from 'projects/ngx-toast-notify/src/public-api';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { NgxTagsModule } from 'projects/ngx-tags-input-box/src/public-api';
     NgxLogsComponent,
     NgxRandomComponent,
     NgxStringsComponent,
-    NgxTagsInputBoxComponent
+    NgxTagsInputBoxComponent,
+    NgxToastNotifyComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,15 @@ import { NgxTagsModule } from 'projects/ngx-tags-input-box/src/public-api';
     NgxDeviceInfoModule,
     NgxLogsModule,
     NgxStringsModule,
-    NgxTagsModule
+    NgxTagsModule,
+    NgxToastNotifyModule.forRoot({
+      toastTimeoutInSeconds: 10,
+      animationDelayInMilliSeconds: 500,
+      enableClosebutton: true,
+      position: 'top-right',
+      backgroundColor: '',
+      textColor: '',
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
