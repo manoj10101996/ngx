@@ -38,7 +38,10 @@
     "publish:ngx-strings": "cd dist/ngx-strings && npm publish",
 
     "build:ngx-tags-input-box": "ng build ngx-tags-input-box --configuration production",
-    "publish:ngx-tags-input-box": "cd dist/ngx-tags-input-box && npm publish"
+    "publish:ngx-tags-input-box": "cd dist/ngx-tags-input-box && npm publish",
+
+    "build:ngx-toast-notify": "ng build ngx-toast-notify --configuration production",
+    "publish:ngx-toast-notify": "cd dist/ngx-toast-notify && npm publish"
   },
   "private": true,
   "dependencies": {

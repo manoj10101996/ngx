@@ -45,6 +45,9 @@
       ],
       "ngx-tags-input-box": [
         "dist/ngx-tags-input-box"
+      ],
+      "ngx-toast-notify": [
+        "dist/ngx-toast-notify"
       ]
     },
     "declaration": false,
