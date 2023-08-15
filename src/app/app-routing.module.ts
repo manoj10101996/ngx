@@ -12,6 +12,7 @@ import { NgxRandomComponent } from './boards/ngx-random/ngx-random.component';
 import { NgxStringsComponent } from './boards/ngx-strings/ngx-strings.component';
 import { NgxTagsModule } from 'projects/ngx-tags-input-box/src/public-api';
 import { NgxToastNotifyComponent } from './boards/ngx-toast-notify/ngx-toast-notify.component';
+import { NgxTagsInputBoxComponent } from './boards/ngx-tags-input-box/ngx-tags-input-box.component';
 
 const routes: Routes = [
   { path: '', component: NgxDefaultImageComponent },
@@ -25,7 +26,7 @@ const routes: Routes = [
   { path: 'ngx-logs', component: NgxLogsComponent },
   { path: 'ngx-random', component: NgxRandomComponent },
   { path: 'ngx-strings', component: NgxStringsComponent },
-  { path: 'ngx-tags-input-box', component: NgxTagsModule },
+  { path: 'ngx-tags-input-box', component: NgxTagsInputBoxComponent },
   { path: 'ngx-toast-notify', component: NgxToastNotifyComponent },
 ];
 

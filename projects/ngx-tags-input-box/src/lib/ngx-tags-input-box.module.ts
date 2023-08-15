@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
-import { NgxTagsInputBoxComponent } from './ngx-tags-input-box.component';
+import { NgxTagsComponent } from './ngx-tags/ngx-tags.component';
+import { CommonModule } from '@angular/common';
 
 
 
 @NgModule({
   declarations: [
-    NgxTagsInputBoxComponent
+    NgxTagsComponent,
   ],
   imports: [
+    CommonModule
   ],
   exports: [
-    NgxTagsInputBoxComponent
+    NgxTagsComponent
   ]
 })
 export class NgxTagsModule { }

@@ -53,7 +53,6 @@ import { NgxToastNotifyModule } from 'projects/ngx-toast-notify/src/public-api';
     NgxDeviceInfoModule,
     NgxLogsModule,
     NgxStringsModule,
-    NgxTagsModule,
     NgxToastNotifyModule.forRoot({
       toastTimeoutInSeconds: 10,
       animationDelayInMilliSeconds: 500,
@@ -62,6 +61,7 @@ import { NgxToastNotifyModule } from 'projects/ngx-toast-notify/src/public-api';
       backgroundColor: '',
       textColor: '',
     }),
+    NgxTagsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

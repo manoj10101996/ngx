@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class NgxTagsInputBoxComponent {
 
+  public rounded: boolean = false;
+  public disabled: boolean = true;
+
+  public tags: any[] = ['welcome', 'to', 'ngx-tags-input'];
+
+  public displayTags(event: any) {
+    // Your code goes here
+  }
 }
