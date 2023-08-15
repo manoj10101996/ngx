@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { META } from 'projects/ngx-default-image/src/public-api';
+import { META } from 'projects/ngx-default-image/src/lib/META';
 
 @Component({
   selector: 'app-ngx-default-image',
