@@ -1,6 +1,6 @@
 {
   "name": "ngx-default-image",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0"
@@ -15,6 +15,7 @@
   "icon": "https://icon.beforepost.com/EYK7RBDV-3E93PTQN-LSO3EATX.svg",
   "description": "Angular library which provides a way prevend image rendering when the image loading failed with custom replacement image and provide extracted meta info from the image.",
   "sideEffects": false,
+  "homepage": "https://www.beforepost.com/package/ngx/ngx-default-image",
   "keywords": [
     "angular",
     "ngx",
