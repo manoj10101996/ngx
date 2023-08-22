@@ -2,6 +2,11 @@
 
 # ngx-default-image (latest)
 
+[![ngx-default-image](https://img.shields.io/npm/dm/ngx-default-image.svg)](https://npmjs.org/package/ngx-default-image)
+[![npm version](https://badge.fury.io/js/ngx-default-image.svg)](https://badge.fury.io/js/ngx-default-image)
+[![](https://data.jsdelivr.com/v1/package/npm/ngx-default-image/badge)](https://www.jsdelivr.com/package/npm/ngx-default-image)
+[![ngx-default-image](https://snyk.io//advisor/npm-package/ngx-default-image/badge.svg)](https://snyk.io//advisor/npm-package/ngx-default-image)
+
 - Angular library which provides a way prevend image rendering when the image loading failed with custom replacement image.
 
 - Get extracted meta info from the image.

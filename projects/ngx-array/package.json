@@ -13,6 +13,7 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "homepage": "https://www.beforepost.com/package/ngx/ngx-array",
   "icon": "https://icon.beforepost.com/VYJ57IDB-D5QBG9K9-CXN7I5MX.svg",
   "keywords": [
     "angular",

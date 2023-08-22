@@ -2,6 +2,11 @@
 
 # Device detector / Device info / Permissions info
 
+[![ngx-device-info](https://img.shields.io/npm/dm/ngx-device-info.svg)](https://npmjs.org/package/ngx-device-info)
+[![npm version](https://badge.fury.io/js/ngx-device-info.svg)](https://badge.fury.io/js/ngx-device-info)
+[![](https://data.jsdelivr.com/v1/package/npm/ngx-device-info/badge)](https://www.jsdelivr.com/package/npm/ngx-device-info)
+[![ngx-device-info](https://snyk.io//advisor/npm-package/ngx-device-info/badge.svg)](https://snyk.io//advisor/npm-package/ngx-device-info)
+
 - Angular library which provides device information / type / name and also it provides much more device independent features & informations.
 
 - Get device information and more
