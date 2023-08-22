@@ -2,7 +2,12 @@
 
 # Permissions info
 
-> Angular library which provides device permission status which are allowed for current device / system.
+[![ngx-check-permission](https://img.shields.io/npm/dm/ngx-check-permission.svg)](https://npmjs.org/package/ngx-check-permission)
+[![npm version](https://badge.fury.io/js/ngx-check-permission.svg)](https://badge.fury.io/js/ngx-check-permission)
+[![](https://data.jsdelivr.com/v1/package/npm/ngx-check-permission/badge)](https://www.jsdelivr.com/package/npm/ngx-check-permission)
+[![ngx-check-permission](https://snyk.io//advisor/npm-package/ngx-check-permission/badge.svg)](https://snyk.io//advisor/npm-package/ngx-check-permission)
+
+Angular library which provides device permission status which are allowed for current device / system.
 
 ---
 
@@ -13,7 +18,7 @@
 
 Import the module on your `app.module.ts` file as follow.
 
-`import { NgxCheckPermissionModule } from 'ngx-check-permission';`
+> import { NgxCheckPermissionModule } from 'ngx-check-permission';
 
 Then import the module as follow on imports array
 

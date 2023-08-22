@@ -2,11 +2,12 @@
 
 # Welcome to ngx-color-converter!
 
+[![ngx-color-converter](https://img.shields.io/npm/dm/ngx-color-converter.svg)](https://npmjs.org/package/ngx-color-converter)
+[![npm version](https://badge.fury.io/js/ngx-color-converter.svg)](https://badge.fury.io/js/ngx-color-converter)
 [![](https://data.jsdelivr.com/v1/package/npm/ngx-color-converter/badge)](https://www.jsdelivr.com/package/npm/ngx-color-converter)
+[![ngx-color-converter](https://snyk.io//advisor/npm-package/ngx-color-converter/badge.svg)](https://snyk.io//advisor/npm-package/ngx-color-converter)
 
 Convert your color value to different variants. Color is the aspect of things that is caused by differing qualities of light being reflected or emitted by them.
-
-[![](https://data.jsdelivr.com/v1/package/npm/ngx-array/badge)](https://www.jsdelivr.com/package/npm/ngx-array)
 
 ---
 

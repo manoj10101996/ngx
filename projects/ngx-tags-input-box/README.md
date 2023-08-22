@@ -2,7 +2,10 @@
 
 # Welcome to NGX-TAGS-INPUT-BOX!
 
+[![ngx-tags-input-box](https://img.shields.io/npm/dm/ngx-tags-input-box.svg)](https://npmjs.org/package/ngx-tags-input-box)
+[![npm version](https://badge.fury.io/js/ngx-tags-input-box.svg)](https://badge.fury.io/js/ngx-tags-input-box)
 [![](https://data.jsdelivr.com/v1/package/npm/ngx-tags-input-box/badge)](https://www.jsdelivr.com/package/npm/ngx-tags-input-box)
+[![ngx-tags-input-box](https://snyk.io//advisor/npm-package/ngx-tags-input-box/badge.svg)](https://snyk.io//advisor/npm-package/ngx-tags-input-box)
 
 Tags input component for angular projects (Also supports angular upto date)
 Creative tags input with multiple color variance and limitable tag range.

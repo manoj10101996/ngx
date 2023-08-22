@@ -2,7 +2,13 @@
 
 # Welcome to NGX-LOGS!
 
+
+[![ngx-logs](https://img.shields.io/npm/dm/ngx-logs.svg)](https://npmjs.org/package/ngx-logs)
+[![npm version](https://badge.fury.io/js/ngx-logs.svg)](https://badge.fury.io/js/ngx-logs)
 [![](https://data.jsdelivr.com/v1/package/npm/ngx-logs/badge)](https://www.jsdelivr.com/package/npm/ngx-logs)
+[![ngx-logs](https://snyk.io//advisor/npm-package/ngx-logs/badge.svg)](https://snyk.io//advisor/npm-package/ngx-logs)
+
+ 
 
 Console input / output strings or any message strings at browser console.
 The **`console.log()`** method outputs a message to the web console. The message may be a single string (with optional substitution values), or it may be any one or more JavaScript objects.

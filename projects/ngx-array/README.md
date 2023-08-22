@@ -2,7 +2,11 @@
 
 # Welcome to ngx-array!
 
+[![ngx-array](https://img.shields.io/npm/dm/ngx-array.svg)](https://npmjs.org/package/ngx-array)
+[![npm version](https://badge.fury.io/js/ngx-array.svg)](https://badge.fury.io/js/ngx-array)
 [![](https://data.jsdelivr.com/v1/package/npm/ngx-array/badge)](https://www.jsdelivr.com/package/npm/ngx-array)
+[![ngx-array](https://snyk.io//advisor/npm-package/ngx-array/badge.svg)](https://snyk.io//advisor/npm-package/ngx-array)
+
 
 Array class is a global object that is used in the construction of arrays; which are high-level, list-like objects.
 

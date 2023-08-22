@@ -1,6 +1,6 @@
 {
   "name": "ngx-alert-message",
-  "version": "3.0.3",
+  "version": "3.0.5",
   "author": {
     "name": "Manojkumar Muthukumar",
     "email": "manoj1010196@gmail.com"
@@ -13,6 +13,7 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "homepage": "https://www.beforepost.com/package/ngx/ngx-alert-message",
   "icon": "https://icon.beforepost.com/5IQN2B2I-Z8A260K8-CLI06PQ9.svg",
   "keywords": [
     "angular",

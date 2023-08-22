@@ -5,7 +5,7 @@
     "email": "manoj1010196@gmail.com"
   },
   "description": "Push notifications to your visitors with a toast, a lightweight and easily customizable alert message with custom theme based.",
-  "version": "3.0.1",
+  "version": "3.0.3",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0"
@@ -13,6 +13,7 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "homepage": "https://www.beforepost.com/package/ngx/ngx-toast-notify",
   "icon": "https://icon.beforepost.com/TAQMDH9I-2D87SQAT-7JIS54O8.svg",
   "keywords": [
     "angular",

@@ -2,6 +2,12 @@
 
 # ngx-resize-element (latest)
 
+[![ngx-resize-element](https://img.shields.io/npm/dm/ngx-resize-element.svg)](https://npmjs.org/package/ngx-resize-element)
+[![npm version](https://badge.fury.io/js/ngx-resize-element.svg)](https://badge.fury.io/js/ngx-resize-element)
+[![](https://data.jsdelivr.com/v1/package/npm/ngx-resize-element/badge)](https://www.jsdelivr.com/package/npm/ngx-resize-element)
+[![ngx-resize-element](https://snyk.io//advisor/npm-package/ngx-resize-element/badge.svg)](https://snyk.io//advisor/npm-package/ngx-resize-element)
+
+
 - Angular library which provides a way resize Block level elements (div, p, etc...) using respective ruler at right bottom.
 
 [<img src="https://github.com/manoj10101996/resources/blob/main/ngx-resize-element-advertise.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-resize-element)

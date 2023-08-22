@@ -2,7 +2,12 @@
 
 # Welcome to ngx-strings
 
+
+[![ngx-strings](https://img.shields.io/npm/dm/ngx-strings.svg)](https://npmjs.org/package/ngx-strings)
+[![npm version](https://badge.fury.io/js/ngx-strings.svg)](https://badge.fury.io/js/ngx-strings)
 [![](https://data.jsdelivr.com/v1/package/npm/ngx-strings/badge)](https://www.jsdelivr.com/package/npm/ngx-strings)
+[![ngx-strings](https://snyk.io//advisor/npm-package/ngx-strings/badge.svg)](https://snyk.io//advisor/npm-package/ngx-strings)
+
 
 # String / Email operations.
 

@@ -1,6 +1,6 @@
 {
   "name": "ngx-check-permission",
-  "version": "3.0.1",
+  "version": "3.0.3",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0"
@@ -13,6 +13,7 @@
     "name": "Manojkumar Muthukumar",
     "email": "manoj1010196@gmail.com"
   },
+  "homepage": "https://www.beforepost.com/package/ngx/ngx-check-permission",
   "description": "Angular library which checks the permission status and returns the permission status for the following api's .push, midi, camera, microphone, speaker, device-info, background-fetch, background-sync, bluetooth, persistent-storage, ambient-light-sensor, accelerometer, gyroscope, magnetometer, clipboard, display-capture, nfc",
   "icon": "https://icon.beforepost.com/W3EL2XBA-LM79Z0DG-4Y17OWY8.svg",
   "keywords": [
