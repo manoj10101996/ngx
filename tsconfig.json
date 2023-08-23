@@ -40,6 +40,9 @@
       "ngx-resize-element": [
         "dist/ngx-resize-element"
       ],
+      "ngx-slight-scroll": [
+        "dist/ngx-slight-scroll"
+      ],
       "ngx-strings": [
         "dist/ngx-strings"
       ],
