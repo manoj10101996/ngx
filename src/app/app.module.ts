@@ -25,6 +25,8 @@ import { NgxTagsInputBoxComponent } from './boards/ngx-tags-input-box/ngx-tags-i
 import { NgxTagsModule } from 'projects/ngx-tags-input-box/src/public-api';
 import { NgxToastNotifyComponent } from './boards/ngx-toast-notify/ngx-toast-notify.component';
 import { NgxToastNotifyModule } from 'projects/ngx-toast-notify/src/public-api';
+import { NgxSlightScrollComponent } from './boards/ngx-slight-scroll/ngx-slight-scroll.component';
+import { NgxSlightScrollModule } from 'projects/ngx-slight-scroll/src/public-api';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,8 @@ import { NgxToastNotifyModule } from 'projects/ngx-toast-notify/src/public-api';
     NgxRandomComponent,
     NgxStringsComponent,
     NgxTagsInputBoxComponent,
-    NgxToastNotifyComponent
+    NgxToastNotifyComponent,
+    NgxSlightScrollComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +55,7 @@ import { NgxToastNotifyModule } from 'projects/ngx-toast-notify/src/public-api';
     NgxColorConverterModule,
     NgxDeviceInfoModule,
     NgxLogsModule,
+    NgxSlightScrollModule,
     NgxStringsModule,
     NgxToastNotifyModule.forRoot({
       toastTimeoutInSeconds: 10,

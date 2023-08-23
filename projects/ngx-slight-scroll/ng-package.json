@@ -1,0 +1,8 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/ngx-slight-scroll",
+  "lib": {
+    "entryFile": "src/public-api.ts"
+  },
+  "assets": ["./assets/ngx-slight-scroll.css"]
+}

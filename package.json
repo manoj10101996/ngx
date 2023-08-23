@@ -41,7 +41,10 @@
     "publish:ngx-tags-input-box": "cd dist/ngx-tags-input-box && npm publish",
 
     "build:ngx-toast-notify": "ng build ngx-toast-notify --configuration production",
-    "publish:ngx-toast-notify": "cd dist/ngx-toast-notify && npm publish"
+    "publish:ngx-toast-notify": "cd dist/ngx-toast-notify && npm publish",
+
+    "build:ngx-slight-scroll": "ng build ngx-slight-scroll --configuration production",
+    "publish:ngx-slight-scroll": "cd dist/ngx-slight-scroll && npm publish"
   },
   "private": true,
   "dependencies": {
