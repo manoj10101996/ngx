@@ -5,7 +5,7 @@
 [![ngx-slight-scroll](https://img.shields.io/npm/dm/ngx-slight-scroll.svg)](https://npmjs.org/package/ngx-slight-scroll)
 [![npm version](https://badge.fury.io/js/ngx-slight-scroll.svg)](https://badge.fury.io/js/ngx-slight-scroll)
 [![](https://data.jsdelivr.com/v1/package/npm/ngx-slight-scroll/badge)](https://www.jsdelivr.com/package/npm/ngx-slight-scroll)
-[![ngx-slight-scroll](https://snyk.io//advisor/npm-package/ngx-slight-scroll/badge.svg)](https://snyk.io//advisor/npm-package/ngx-slight-scroll)
+<!-- [![ngx-slight-scroll](https://snyk.io//advisor/npm-package/ngx-slight-scroll/badge.svg)](https://snyk.io//advisor/npm-package/ngx-slight-scroll) -->
 
 - The CSS scrollbars styling module defines properties that you can use for visual styling of scrollbars. You can customize the width of the scrollbar as required. You can also customize the color of the scrollbar track, which is the background of the scrollbar, and the color of the scrollbar thumb, which is the draggable handle of the scrollbar.
 
@@ -15,15 +15,15 @@
 
 - [x] Import using CSS CDN and Add it to your application
 
-```
-  <link rel="stylesheet" href="https://cdn.beforepost.com/neptune/ngx-slight-scroll-minified.css">
+``` HTML
+<link rel="stylesheet" href="https://cdn.beforepost.com/neptune/ngx-slight-scroll-minified.css">
 ```
 
 Add `crossorigin` attribute as (use-credentials or anonymous) to link element if required.
 
 - [x] Directly add it to your Css / Scss file.
 
-```
+``` CSS
 @import url("https://cdn.beforepost.com/neptune/ngx-slight-scroll-minified.css");
 ```
 
@@ -89,8 +89,7 @@ imports: [
 
 [<img src="https://github.com/manoj10101996/resources/blob/main/ngx-slight-scroll-poster.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-slight-scroll)
 
-```
-
+ 
 
 ### Code integration
 
@@ -104,4 +103,4 @@ Then import the module as follow on imports array
 
 
 [<img src="https://github.com/manoj10101996/resources/blob/main/ngx-slight-scroll-advertise.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-slight-scroll)
-```
+ 
