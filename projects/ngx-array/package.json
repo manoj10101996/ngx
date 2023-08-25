@@ -5,7 +5,7 @@
     "email": "manoj1010196@gmail.com"
   },
   "description": "Array class is a global object that is used in the construction of arrays; which are high-level, list-like objects.",
-  "version": "3.0.3",
+  "version": "3.0.5",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0"
@@ -15,6 +15,10 @@
   },
   "homepage": "https://www.beforepost.com/package/ngx/ngx-array",
   "icon": "https://icon.beforepost.com/VYJ57IDB-D5QBG9K9-CXN7I5MX.svg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manoj10101996/ngx-packages.git"
+  },
   "keywords": [
     "angular",
     "ngx",

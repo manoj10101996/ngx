@@ -1,0 +1,37 @@
+{
+  "name": "ngx-cursor-hover",
+  "version": "0.0.2",
+  "peerDependencies": {
+    "@angular/common": "^15.2.0",
+    "@angular/core": "^15.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "author": {
+    "name": "Manojkumar Muthukumar",
+    "email": "manoj1010196@gmail.com"
+  },
+  "icon": "https://raw.githubusercontent.com/manoj10101996/resources/5d05c67fd08ed980e80f3c95363caf5fbdd75a7f/ngx-cursor-hover.svg",
+  "description": "The CSS cursor property specifies the mouse cursor to be displayed when pointing over an element. It can be used to change the cursor to a variety of different shapes, such as a hand, a crosshair, or an arrow.",
+  "sideEffects": false,
+  "homepage": "https://www.beforepost.com/package/ngx/ngx-cursor-hover",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manoj10101996/ngx-packages.git"
+  },
+  "keywords": [
+    "angular",
+    "ngx",
+    "ng",
+    "cursor",
+    "ngx-cursor-hover",
+    "manoj1010196",
+    "uiconfig",
+    "cursor-hover",
+    "hover",
+    "pointer",
+    "npm"
+  ],
+  "license": "MIT"
+}
