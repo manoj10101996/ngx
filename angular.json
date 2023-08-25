@@ -528,6 +528,39 @@
           }
         }
       }
+    },
+    "ngx-cursor-hover": {
+      "projectType": "library",
+      "root": "projects/ngx-cursor-hover",
+      "sourceRoot": "projects/ngx-cursor-hover/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-cursor-hover/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-cursor-hover/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-cursor-hover/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/ngx-cursor-hover/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }

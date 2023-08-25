@@ -13,6 +13,7 @@ import { NgxSlightScrollComponent } from './boards/ngx-slight-scroll/ngx-slight-
 import { NgxStringsComponent } from './boards/ngx-strings/ngx-strings.component';
 import { NgxTagsInputBoxComponent } from './boards/ngx-tags-input-box/ngx-tags-input-box.component';
 import { NgxToastNotifyComponent } from './boards/ngx-toast-notify/ngx-toast-notify.component';
+import { NgxCursorHoverComponent } from './boards/ngx-cursor-hover/ngx-cursor-hover.component';
 
 const routes: Routes = [
   { path: '', component: NgxDefaultImageComponent },
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'ngx-tags-input-box', component: NgxTagsInputBoxComponent },
   { path: 'ngx-toast-notify', component: NgxToastNotifyComponent },
   { path: 'ngx-slight-scroll', component: NgxSlightScrollComponent },
+  { path: 'ngx-cursor-hover', component: NgxCursorHoverComponent },
 ];
 
 @NgModule({

@@ -44,7 +44,10 @@
     "publish:ngx-toast-notify": "cd dist/ngx-toast-notify && npm publish",
 
     "build:ngx-slight-scroll": "ng build ngx-slight-scroll --configuration production",
-    "publish:ngx-slight-scroll": "cd dist/ngx-slight-scroll && npm publish"
+    "publish:ngx-slight-scroll": "cd dist/ngx-slight-scroll && npm publish",
+
+    "build:ngx-cursor-hover": "ng build ngx-cursor-hover --configuration production",
+    "publish:ngx-cursor-hover": "cd dist/ngx-cursor-hover && npm publish"
   },
   "private": true,
   "dependencies": {
