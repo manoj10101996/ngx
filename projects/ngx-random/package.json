@@ -5,7 +5,7 @@
     "email": "manoj1010196@gmail.com"
   },
   "description": "Generates specified length of strings / digits for password | Otp | unique identification purposes",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0"
@@ -15,6 +15,10 @@
   },
   "homepage": "https://www.beforepost.com/package/ngx/ngx-random",
   "icon": "https://icon.beforepost.com/VQF5LQAJ-W6WFR2Q7-7VTTX8CA.svg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manoj10101996/ngx-packages.git"
+  },
   "keywords": [
     "angular",
     "ngx",

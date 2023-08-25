@@ -1,6 +1,6 @@
 {
   "name": "ngx-alert-message",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "author": {
     "name": "Manojkumar Muthukumar",
     "email": "manoj1010196@gmail.com"
@@ -15,6 +15,10 @@
   },
   "homepage": "https://www.beforepost.com/package/ngx/ngx-alert-message",
   "icon": "https://icon.beforepost.com/5IQN2B2I-Z8A260K8-CLI06PQ9.svg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manoj10101996/ngx-packages.git"
+  },
   "keywords": [
     "angular",
     "ngx",

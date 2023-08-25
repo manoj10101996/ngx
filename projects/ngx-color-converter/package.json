@@ -5,7 +5,7 @@
     "email": "manoj1010196@gmail.com"
   },
   "description": "Convert your color value to different variants. Color is the aspect of things that is caused by differing qualities of light being reflected or emitted by them.",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0"
@@ -15,6 +15,10 @@
   },
   "homepage": "https://www.beforepost.com/package/ngx/ngx-color-converter",
   "icon": "https://icon.beforepost.com/EYK7RBDV-3E93PTQN-LSO3EATX.svg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manoj10101996/ngx-packages.git"
+  },
   "keywords": [
     "angular",
     "ngx",

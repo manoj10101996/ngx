@@ -1,6 +1,6 @@
 {
   "name": "ngx-device-info",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0"
@@ -15,6 +15,10 @@
   "homepage": "https://www.beforepost.com/package/ngx/ngx-device-info",
   "description": "Angular library which provides device information / type / name and also it provides much more device independent features & informations.",
   "icon": "https://icon.beforepost.com/F3K9DD33-RH2MK3E5-RG0GS8AX.svg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manoj10101996/ngx-packages.git"
+  },
   "keywords": [
     "angular",
     "ngx",

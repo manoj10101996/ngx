@@ -1,6 +1,6 @@
 {
   "name": "ngx-slight-scroll",
-  "version": "0.0.6",
+  "version": "0.0.9",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0"
@@ -16,6 +16,10 @@
   "homepage": "https://www.beforepost.com/package/ngx/ngx-slight-scroll",
   "description": "The CSS scrollbars styling module defines properties that you can use for visual styling of scrollbars. You can customize the width of the scrollbar as required.",
   "icon": "https://icon.beforepost.com/2KRP6DWE-F005AU3Y-1SKBC1EC.svg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manoj10101996/ngx-packages.git"
+  },
   "keywords": [
     "angular",
     "scrollbar",
