@@ -29,6 +29,8 @@ import { NgxSlightScrollComponent } from './boards/ngx-slight-scroll/ngx-slight-
 import { NgxSlightScrollModule } from 'projects/ngx-slight-scroll/src/public-api';
 import { NgxCursorHoverComponent } from './boards/ngx-cursor-hover/ngx-cursor-hover.component';
 import { NgxCursorHoverModule } from 'projects/ngx-cursor-hover/src/public-api';
+import { NgxColorPaletteComponent } from './boards/ngx-color-palette/ngx-color-palette.component';
+import { NgxColorPaletteModule } from 'projects/ngx-color-palette/src/public-api';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,8 @@ import { NgxCursorHoverModule } from 'projects/ngx-cursor-hover/src/public-api';
     NgxTagsInputBoxComponent,
     NgxToastNotifyComponent,
     NgxSlightScrollComponent,
-    NgxCursorHoverComponent
+    NgxCursorHoverComponent,
+    NgxColorPaletteComponent
   ],
   imports: [
     BrowserModule,
@@ -60,6 +63,7 @@ import { NgxCursorHoverModule } from 'projects/ngx-cursor-hover/src/public-api';
     NgxLogsModule,
     NgxSlightScrollModule,
     NgxCursorHoverModule,
+    NgxColorPaletteModule,
     NgxStringsModule,
     NgxToastNotifyModule.forRoot({
       toastTimeoutInSeconds: 10,

@@ -25,6 +25,9 @@
       "ngx-color-converter": [
         "dist/ngx-color-converter"
       ],
+      "ngx-color-palette": [
+        "dist/ngx-color-palette"
+      ],
       "ngx-cursor-hover": [
         "dist/ngx-cursor-hover"
       ],
