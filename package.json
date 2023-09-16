@@ -47,7 +47,10 @@
     "publish:ngx-slight-scroll": "cd dist/ngx-slight-scroll && npm publish",
 
     "build:ngx-cursor-hover": "ng build ngx-cursor-hover --configuration production",
-    "publish:ngx-cursor-hover": "cd dist/ngx-cursor-hover && npm publish"
+    "publish:ngx-cursor-hover": "cd dist/ngx-cursor-hover && npm publish",
+
+    "build:ngx-color-palette": "ng build ngx-color-palette --configuration production",
+    "publish:ngx-color-palette": "cd dist/ngx-color-palette && npm publish"
   },
   "private": true,
   "dependencies": {
