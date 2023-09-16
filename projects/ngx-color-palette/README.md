@@ -1,24 +1,71 @@
-# NgxColorPalette
+<img width="256px" src="https://github.com/manoj10101996/resources/blob/main/ngx-color-palette.png?raw=true"/>
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+# Color picker (ngx-color-palette)
 
-## Code scaffolding
+<!-- [![ngx-color-palette](https://img.shields.io/npm/dm/ngx-color-palette.svg)](https://npmjs.org/package/ngx-color-palette)
+[![npm version](https://badge.fury.io/js/ngx-color-palette.svg)](https://badge.fury.io/js/ngx-color-palette)
+[![](https://data.jsdelivr.com/v1/package/npm/ngx-color-palette/badge)](https://www.jsdelivr.com/package/npm/ngx-color-palette) -->
 
-Run `ng generate component component-name --project ngx-color-palette` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-color-palette`.
-> Note: Don't forget to add `--project ngx-color-palette` or else it will be added to the default project in your `angular.json` file. 
+Angular library which provides color picker functionality to your angular application.
 
-## Build
+---
 
-Run `ng build ngx-color-palette` to build the project. The build artifacts will be stored in the `dist/` directory.
+[<img src="https://github.com/manoj10101996/resources/blob/main/ngx-color-palette-advertise.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-color-palette)
 
-## Publishing
+---
 
-After building your library with `ng build ngx-color-palette`, go to the dist folder `cd dist/ngx-color-palette` and run `npm publish`.
+[<img src="https://github.com/manoj10101996/resources/blob/main/ngx-color-palette-poster-2.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-color-palette)
 
-## Running unit tests
 
-Run `ng test ngx-color-palette` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Import
 
-## Further help
+Import the module on your `app.module.ts` file as follow.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+> import { NgxColorPaletteModule } from 'ngx-color-palette';
+
+Then import the module as follow on imports array
+
+> NgxColorPaletteModule
+
+## Integration
+
+```
+<ngx-color-palette [color]="'red'" (currentColor)="currentColor($event)"></ngx-color-palette>
+```
+
+on .html
+
+```
+<ngx-color-palette  [color]="color" [squared]="false" (currentColor)="currentColor($event)"></ngx-color-palette>
+```
+
+on .ts
+
+```TS
+color = '#FBC02D'; // any color value (name / hex / rgb / hsl)
+
+public currentColor(event: any) { // to receive output
+  this.color = event.color;
+}
+```
+
+| Field        | type           | Info                           |
+| ------------ | -------------- | ------------------------------ |
+| color        | string         | Variable to bind               |
+| squared      | boolean        | Non-rounded egdes              |
+| currentColor | event / method | to get changed / emitted value |
+
+
+[<img src="https://github.com/manoj10101996/resources/blob/main/ngx-color-palette-poster.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-color-palette)
+
+## Code integration
+
+To use this package as a service `npm i ngx-color-palette` install this on the root angular project .
+
+> Note: Don't forget to run this commend `npm i ngx-color-palette` on root folder or else it will throw error.
+
+---
+
+[<img src="https://github.com/manoj10101996/resources/blob/main/ngx-color-palette-advertise.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-color-palette)
+
+---

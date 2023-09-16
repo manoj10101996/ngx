@@ -1,6 +1,6 @@
 {
   "name": "ngx-color-palette",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0"
@@ -8,5 +8,60 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "homepage": "https://www.beforepost.com/package/ngx/ngx-color-palette",
+  "icon": "https://github.com/manoj10101996/resources/blob/main/ngx-color-palette.png?raw=true",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manoj10101996/ngx-packages.git"
+  },
+  "keywords": [
+    "angular",
+    "ngx",
+    "color",
+    "rgb",
+    "red",
+    "green",
+    "blue",
+    "cyan",
+    "magenta",
+    "yellow",
+    "black",
+    "hue",
+    "saturation",
+    "lightness",
+    "blackness",
+    "rgba",
+    "hex",
+    "ngx-color-palette",
+    "color-converter",
+    "ncol",
+    "hsl",
+    "cymk",
+    "hsla",
+    "hslToRgb",
+    "hueToRgb",
+    "hwbToRgb",
+    "cmykToRgb",
+    "colord",
+    "color-palette",
+    "color-picker",
+    "colors",
+    "ncolToRgb",
+    "hueToNcol",
+    "ncsToRgb",
+    "rgbToHsl",
+    "rgbToHwb",
+    "rgbToCmyk",
+    "manoj10101996",
+    "uiconfig",
+    "colord",
+    "colors",
+    "color",
+    "colour",
+    "color-wheel",
+    "picker",
+    "color-picker"
+  ],
+  "license": "MIT",
   "sideEffects": false
 }
