@@ -9,6 +9,9 @@
 Angular library which provides color picker functionality to your angular application.
 
 A color picker is a graphical user interface widget, usually found within graphics software or online, used to select colors and, in some cases, to create color schemes. 
+---
+
+[<img src="https://github.com/manoj10101996/resources/blob/main/ngx-color-palette.gif?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-color-palette)
 
 ---
 
