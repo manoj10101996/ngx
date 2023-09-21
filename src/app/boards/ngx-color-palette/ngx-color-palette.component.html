@@ -2,12 +2,12 @@
   <p>Welcome to {{title}}!</p>
   <h5>Start editing to see some magic happen</h5>
   <div class="sample-card" [style.background]="color">
-    <ngx-color-palette  [color]="color" [squared]="false" (currentColor)="currentColor($event)"></ngx-color-palette>
+    <ngx-color-palette  [color]="color" [squared]="false" [position]="'center'" (currentColor)="currentColor($event)"></ngx-color-palette>
    &nbsp;&nbsp;&nbsp;{{color}}
   </div>
   <hr>
   <div class="sample-card" [style.background]="color2">
-    <ngx-color-palette  [color]="color2" [squared]="true" (currentColor)="currentColor2($event)"></ngx-color-palette>
+    <ngx-color-palette  [color]="color2" [squared]="true" [position]="'center'" (currentColor)="currentColor2($event)"></ngx-color-palette>
    &nbsp;&nbsp;&nbsp;{{color2}}
   </div>
 </div>

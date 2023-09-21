@@ -13,6 +13,7 @@ export class NgxColorPaletteComponent implements AfterViewInit {
 
   @Input() color: string = '';
   @Input() squared: boolean = false;
+  @Input() position: string = 'bottom-left';
 
   @Output() currentColor: EventEmitter<any> = new EventEmitter<any>();
 

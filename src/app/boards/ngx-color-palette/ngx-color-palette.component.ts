@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { COLOREVENT } from 'projects/ngx-color-palette/src/lib/RAW';
+import { COLOREVENT } from 'projects/ngx-color-palette/src/public-api';
 
 @Component({
   selector: 'app-ngx-color-palette',

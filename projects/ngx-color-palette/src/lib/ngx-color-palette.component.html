@@ -1,7 +1,7 @@
 <div class="cp-core-container">
 
   <div class="cp-color-preview" [class.ngx-palette-squared]="squared" (mouseover)="isShow = true;" (focusout)="isShow = false" [style.background]="color">
-    <div class="cp-color-palette" [class.ngx-palette-squared]="squared" [hidden]="!isShow">
+    <div class="cp-color-palette" [ngClass]="'cp-position-'+position" [class.ngx-palette-squared]="squared" [hidden]="!isShow">
       <div class="cp-colors-cavas ngx-cp-border-bottom">
         <div class="cp-color-pill-grid">
           <div class="cp-color-pill cp-color-pill-drop" (click)="showBasic();"  >
@@ -9,27 +9,27 @@
               <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"/>
               <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"/>
             </svg>
-          </div> 
+          </div>
           <div class="cp-color-pill cp-color-pill-drop" (click)="showMaterial();">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" [class.npx-active-mode]="mode === 'material'" fill="#d9d9d9" class="bi bi-triangle-half" viewBox="0 0 16 16">
               <path d="M8.065 2.016A.13.13 0 0 0 8.002 2v11.983l6.856.017a.12.12 0 0 0 .066-.017.162.162 0 0 0 .054-.06.176.176 0 0 0-.002-.183L8.12 2.073a.146.146 0 0 0-.054-.057zm-1.043-.45a1.13 1.13 0 0 1 1.96 0l6.856 11.667c.458.778-.091 1.767-.98 1.767H1.146c-.889 0-1.437-.99-.98-1.767L7.022 1.566z"/>
             </svg>
-          </div> 
+          </div>
           <div class="cp-color-pill cp-color-pill-drop" (click)="showCrayola();">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" [class.npx-active-mode]="mode === 'crayola'" fill="#d9d9d9" class="bi bi-ui-radios-grid" viewBox="0 0 16 16">
               <path d="M3.5 15a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm9-9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm0 9a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zM16 3.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0zm-9 9a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0zm5.5 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm-9-11a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
             </svg>
-          </div> 
+          </div>
           <div class="cp-color-pill cp-color-pill-drop" (click)="showWheel();">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" [class.npx-active-mode]="mode === 'wheel'" fill="#d9d9d9" class="bi bi-palette-fill" viewBox="0 0 16 16">
                 <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
-            </svg> 
-          </div> 
+            </svg>
+          </div>
           <div class="cp-color-pill cp-color-pill-drop" (click)="showHsl();">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" [class.npx-active-mode]="mode === 'hsl'" fill="#d9d9d9" class="bi bi-palette2" viewBox="0 0 16 16">
                 <path d="M0 .5A.5.5 0 0 1 .5 0h5a.5.5 0 0 1 .5.5v5.277l4.147-4.131a.5.5 0 0 1 .707 0l3.535 3.536a.5.5 0 0 1 0 .708L10.261 10H15.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5H3a2.99 2.99 0 0 1-2.121-.879A2.99 2.99 0 0 1 0 13.044m6-.21 7.328-7.3-2.829-2.828L6 7.188v5.647zM4.5 13a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zM15 15v-4H9.258l-4.015 4H15zM0 .5v12.495V.5z"/>
                 <path d="M0 12.995V13a3.07 3.07 0 0 0 0-.005z"/>
-            </svg>              
+            </svg>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@
       </div>
        <!--  -->
       <div class="cp-colors-cavas" *ngIf="mode === 'material'">
-        <div *ngFor="let matkey of material | keyvalue;"> 
+        <div *ngFor="let matkey of material | keyvalue;">
           <div class="cp-color-pill-grid">
             <div *ngFor="let colorValue of matkey['value'] | keyvalue" (click)="choosenColor = colorValue['value'];"
               [class.ngx-palette-squared]="squared"
@@ -73,7 +73,7 @@
           </div>
           &nbsp;
         </div>
-       
+
       </div>
       <!--  -->
       <div class="cp-colors-cavas" *ngIf="mode === 'basic'">
@@ -86,32 +86,32 @@
         </div>
         <div class="cp-color-pill-grid" *ngIf="isPalette">
           <div *ngFor="let colorValue of colors[paletteIndex]['variants'];let cIndex = index;" class="cp-color-pill"
-            [class.ngx-palette-squared]="squared"  
+            [class.ngx-palette-squared]="squared"
             [class.cp-color-pill-active]="choosenColor === colorValue" (click)="setColor(colorValue)"
             [style.background]="colorValue">
           </div>
           <div class="cp-color-pill cp-color-pill-drop" (click)="isPalette = false;">
             <svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(90deg)" width="32" height="32" fill="#d9d9d9" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
-              </svg>                          
+              </svg>
           </div>
         </div>
       </div>
       <!--  -->
       <div class="cp-color-actions" [style.background]="choosenColor">
         <button class="cp-color-button cp-select-button" [class.ngx-palette-squared]="squared">
-          {{choosenColor}}            
+          {{choosenColor}}
         </button>
        <div></div>
         <button class="cp-color-button cp-select-button" (click)="setCoreColor()" [class.ngx-palette-squared]="squared">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5cb85c" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-            </svg>              
+            </svg>
         </button>
         <button class="cp-color-button cp-cancel-button" (click)="discardCoreColor();" [class.ngx-palette-squared]="squared">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d9534f" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-            </svg>              
+            </svg>
         </button>
       </div>
     </div>
