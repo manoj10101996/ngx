@@ -1,4 +1,10 @@
+Angular library which provides color picker functionality to your angular application.
+
+A color picker is a graphical user interface widget, usually found within graphics software or online, used to select colors and, in some cases, to create color schemes.
+
 <img width="256px" src="https://github.com/manoj10101996/resources/blob/main/ngx-color-palette.png?raw=true"/>
+
+> npm i ngx-color-palette
 
 # Color picker (ngx-color-palette)
 
@@ -6,10 +12,13 @@
 [![npm version](https://badge.fury.io/js/ngx-color-palette.svg)](https://badge.fury.io/js/ngx-color-palette)
 [![](https://data.jsdelivr.com/v1/package/npm/ngx-color-palette/badge)](https://www.jsdelivr.com/package/npm/ngx-color-palette) -->
 
-Angular library which provides color picker functionality to your angular application.
 
-A color picker is a graphical user interface widget, usually found within graphics software or online, used to select colors and, in some cases, to create color schemes. 
----
+
+Now `position` your color picker with additional attribute.
+
+`
+top, bottom, left, right, bottom-left, bottom-right, top-left, top-right, center
+`
 
 [<img src="https://github.com/manoj10101996/resources/blob/main/ngx-color-palette.gif?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-color-palette)
 
@@ -20,7 +29,6 @@ A color picker is a graphical user interface widget, usually found within graphi
 ---
 
 [<img src="https://github.com/manoj10101996/resources/blob/main/ngx-color-palette-poster-2.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-color-palette)
-
 
 ## Import
 
@@ -34,14 +42,10 @@ Then import the module as follow on imports array
 
 ## Integration
 
-```
-<ngx-color-palette [color]="'red'" (currentColor)="currentColor($event)"></ngx-color-palette>
-```
-
 on .html
 
 ```
-<ngx-color-palette  [color]="color" [squared]="false" (currentColor)="currentColor($event)"></ngx-color-palette>
+<ngx-color-palette  [color]="color" [squared]="false" [position]="position" (currentColor)="currentColor($event)"></ngx-color-palette>
 ```
 
 on .ts
@@ -54,12 +58,13 @@ public currentColor(event: any) { // to receive output
 }
 ```
 
-| Field        | type           | Info                           |
-| ------------ | -------------- | ------------------------------ |
-| color        | string         | Variable to bind               |
-| squared      | boolean        | Non-rounded egdes              |
-| currentColor | event / method | to get changed / emitted value |
-
+| Field        | type           | Info                                                                     |
+| ------------ | -------------- | ------------------------------------------------------------------------ |
+| color        | string         | Variable to bind                                                         |
+| squared      | boolean        | Non-rounded egdes                                                        |
+| currentColor | event / method | to get changed / emitted value                                           |
+| postion      | string         | place the palette                                                        |
+|              |                | top, bottom, left, right, bottom-left, bottom-right, top-left, top-right, center |
 
 [<img src="https://github.com/manoj10101996/resources/blob/main/ngx-color-palette-poster.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-color-palette)
 
