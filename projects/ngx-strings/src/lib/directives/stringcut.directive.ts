@@ -1,7 +1,8 @@
 import { Directive, Input, ElementRef, Renderer2, OnInit } from '@angular/core';
 
 @Directive({
-  selector: '[ngxStringSlicer]',
+    selector: '[ngxStringSlicer]',
+    standalone: true,
 })
 export class StringcutDirective implements OnInit {
   @Input() start: number;

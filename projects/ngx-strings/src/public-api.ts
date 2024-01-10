@@ -4,7 +4,7 @@
 
 export * from './lib/ngx-strings.service';
 export * from './lib/ngx-strings.component';
-export * from './lib/ngx-strings.module';
+
 export * from './lib/directives/emailcut.directive';
 export * from './lib/directives/initialcase.directive';
 export * from './lib/directives/linelimit.directive';

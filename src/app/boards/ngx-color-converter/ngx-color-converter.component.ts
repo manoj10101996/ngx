@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { NgxColorConverterService } from 'projects/ngx-color-converter/src/public-api';
 
 @Component({
-  selector: 'app-ngx-color-converter',
-  templateUrl: './ngx-color-converter.component.html',
-  styleUrls: ['./ngx-color-converter.component.scss']
+    selector: 'app-ngx-color-converter',
+    templateUrl: './ngx-color-converter.component.html',
+    styleUrls: ['./ngx-color-converter.component.scss'],
+    standalone: true
 })
 export class NgxColorConverterComponent {
   constructor(private colors: NgxColorConverterService) {

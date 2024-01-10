@@ -1,7 +1,8 @@
 import { Directive, ElementRef, Renderer2 } from '@angular/core';
 
 @Directive({
-  selector: '[ngxUpperCase]',
+    selector: '[ngxUpperCase]',
+    standalone: true,
 })
 export class UppercaseDirective {
   constructor(private el: ElementRef, private renderer: Renderer2) {

@@ -2,12 +2,15 @@ import { AfterViewInit, Component, ElementRef, EventEmitter, HostListener, Input
 import { COLOREVENT, RAW } from './RAW';
 import { CRAYOLA } from "./CRAYOLA";
 import { MATERIAL } from "./MATERIAL";
+import { NgClass, KeyValuePipe } from '@angular/common';
 
 type colorMode = 'basic' | 'hsl' | 'wheel';
 @Component({
-  selector: 'ngx-color-palette',
-  templateUrl: './ngx-color-palette.component.html',
-  styleUrls: ['./ngx-color-palette.component.scss']
+    selector: 'ngx-color-palette',
+    templateUrl: './ngx-color-palette.component.html',
+    styleUrls: ['./ngx-color-palette.component.scss'],
+    standalone: true,
+    imports: [NgClass, KeyValuePipe]
 })
 export class NgxColorPaletteComponent implements AfterViewInit {
 

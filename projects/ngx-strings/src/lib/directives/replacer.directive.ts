@@ -1,7 +1,8 @@
 import { Directive, Input, ElementRef, Renderer2 } from '@angular/core';
 
 @Directive({
-  selector: '[ngxStringReplacer]',
+    selector: '[ngxStringReplacer]',
+    standalone: true,
 })
 export class ReplacerDirective {
   @Input() from: string;

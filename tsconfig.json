@@ -13,6 +13,9 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
+      "@angular/*": [
+        "./node_modules/@angular/*"
+      ],
       "ngx-alert-message": [
         "dist/ngx-alert-message"
       ],

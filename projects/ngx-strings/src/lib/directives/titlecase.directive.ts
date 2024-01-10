@@ -1,7 +1,8 @@
 import { Directive, ElementRef, Renderer2 } from '@angular/core';
 
 @Directive({
-  selector: '[ngxTitleCase]',
+    selector: '[ngxTitleCase]',
+    standalone: true,
 })
 export class TitlecaseDirective {
   constructor(private el: ElementRef, private renderer: Renderer2) {

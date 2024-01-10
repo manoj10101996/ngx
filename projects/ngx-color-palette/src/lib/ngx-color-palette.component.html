@@ -22,13 +22,13 @@
           </div>
           <div class="cp-color-pill cp-color-pill-drop" (click)="showWheel();">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" [class.npx-active-mode]="mode === 'wheel'" fill="#d9d9d9" class="bi bi-palette-fill" viewBox="0 0 16 16">
-                <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+              <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
             </svg>
           </div>
           <div class="cp-color-pill cp-color-pill-drop" (click)="showHsl();">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" [class.npx-active-mode]="mode === 'hsl'" fill="#d9d9d9" class="bi bi-palette2" viewBox="0 0 16 16">
-                <path d="M0 .5A.5.5 0 0 1 .5 0h5a.5.5 0 0 1 .5.5v5.277l4.147-4.131a.5.5 0 0 1 .707 0l3.535 3.536a.5.5 0 0 1 0 .708L10.261 10H15.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5H3a2.99 2.99 0 0 1-2.121-.879A2.99 2.99 0 0 1 0 13.044m6-.21 7.328-7.3-2.829-2.828L6 7.188v5.647zM4.5 13a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zM15 15v-4H9.258l-4.015 4H15zM0 .5v12.495V.5z"/>
-                <path d="M0 12.995V13a3.07 3.07 0 0 0 0-.005z"/>
+              <path d="M0 .5A.5.5 0 0 1 .5 0h5a.5.5 0 0 1 .5.5v5.277l4.147-4.131a.5.5 0 0 1 .707 0l3.535 3.536a.5.5 0 0 1 0 .708L10.261 10H15.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5H3a2.99 2.99 0 0 1-2.121-.879A2.99 2.99 0 0 1 0 13.044m6-.21 7.328-7.3-2.829-2.828L6 7.188v5.647zM4.5 13a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zM15 15v-4H9.258l-4.015 4H15zM0 .5v12.495V.5z"/>
+              <path d="M0 12.995V13a3.07 3.07 0 0 0 0-.005z"/>
             </svg>
           </div>
         </div>
@@ -37,10 +37,12 @@
       <div class="color-wheel-box" [hidden]="mode !== 'wheel'">
         <div class="color-box" [attr.id]="'color-box-'+ randomId">
           <svg>
-            <line *ngFor="let axis of colorAxis;let i = index" [style.zIndex]="i" [attr.id]="i"
-              (click)="choosenColor = hslToHex(i, 100, 50);" [attr.x1]="axis?.x1" [attr.y1]="axis?.y1"
-              [attr.x2]="axis?.x2" [attr.y2]="axis?.y2" [style.stroke]="'hsl('+i+',100%,50%)'"
-              [style.strokeWidth]="(clientBox.width * 4 / 360)" />
+            @for (axis of colorAxis; track axis; let i = $index) {
+              <line [style.zIndex]="i" [attr.id]="i"
+                (click)="choosenColor = hslToHex(i, 100, 50);" [attr.x1]="axis?.x1" [attr.y1]="axis?.y1"
+                [attr.x2]="axis?.x2" [attr.y2]="axis?.y2" [style.stroke]="'hsl('+i+',100%,50%)'"
+                [style.strokeWidth]="(clientBox.width * 4 / 360)" />
+            }
           </svg>
         </div>
         <div class="center-box">
@@ -48,70 +50,93 @@
         </div>
       </div>
       <!--  -->
-      <div class="hue-grid-hex" *ngIf="mode === 'hsl'">
-        <div *ngFor="let hue of iterator" (click)="choosenColor = hslToHex(hue, 100, 50);"
-          [style.backgroundColor]="'hsl('+hue+',100%,50%)'" class="hue-item-hex"></div>
-      </div>
-      <!--  -->
-      <div class="cp-colors-cavas" *ngIf="mode === 'crayola'">
-        <div class="cp-color-pill-grid">
-          <div *ngFor="let colorValue of crayola" (click)="choosenColor = colorValue?.hex || '';"
-            [class.ngx-palette-squared]="squared"
-            [class.cp-color-pill-active]="choosenColor === colorValue?.hex"
-            [style.backgroundColor]="colorValue?.hex" class="cp-color-pill"></div>
+      @if (mode === 'hsl') {
+        <div class="hue-grid-hex">
+          @for (hue of iterator; track hue) {
+            <div (click)="choosenColor = hslToHex(hue, 100, 50);"
+            [style.backgroundColor]="'hsl('+hue+',100%,50%)'" class="hue-item-hex"></div>
+          }
         </div>
-      </div>
-       <!--  -->
-      <div class="cp-colors-cavas" *ngIf="mode === 'material'">
-        <div *ngFor="let matkey of material | keyvalue;">
+      }
+      <!--  -->
+      @if (mode === 'crayola') {
+        <div class="cp-colors-cavas">
           <div class="cp-color-pill-grid">
-            <div *ngFor="let colorValue of matkey['value'] | keyvalue" (click)="choosenColor = colorValue['value'];"
-              [class.ngx-palette-squared]="squared"
-              [class.cp-color-pill-active]="choosenColor === colorValue['value']"
-              [style.backgroundColor]="colorValue['value']" class="cp-color-pill">
-             </div>
+            @for (colorValue of crayola; track colorValue) {
+              <div (click)="choosenColor = colorValue?.hex || '';"
+                [class.ngx-palette-squared]="squared"
+                [class.cp-color-pill-active]="choosenColor === colorValue?.hex"
+              [style.backgroundColor]="colorValue?.hex" class="cp-color-pill"></div>
+            }
           </div>
-          &nbsp;
         </div>
-
-      </div>
+      }
       <!--  -->
-      <div class="cp-colors-cavas" *ngIf="mode === 'basic'">
-        <div class="cp-color-pill-grid" *ngIf="!isPalette">
-          <div *ngFor="let colorValue of colors;let pIndex = index;" class="cp-color-pill"
-            [class.ngx-palette-squared]="squared"
-            [class.cp-color-pill-active]="choosenColor === colorValue.preview"
-            (click)="paletteIndex = pIndex;isPalette = true" [style.background]="colorValue.preview">
-          </div>
+      @if (mode === 'material') {
+        <div class="cp-colors-cavas">
+          @for (matkey of material | keyvalue; track matkey) {
+            <div>
+              <div class="cp-color-pill-grid">
+                @for (colorValue of matkey['value'] | keyvalue; track colorValue) {
+                  <div (click)="choosenColor = colorValue['value'];"
+                    [class.ngx-palette-squared]="squared"
+                    [class.cp-color-pill-active]="choosenColor === colorValue['value']"
+                    [style.backgroundColor]="colorValue['value']" class="cp-color-pill">
+                  </div>
+                }
+              </div>
+              &nbsp;
+            </div>
+          }
         </div>
-        <div class="cp-color-pill-grid" *ngIf="isPalette">
-          <div *ngFor="let colorValue of colors[paletteIndex]['variants'];let cIndex = index;" class="cp-color-pill"
-            [class.ngx-palette-squared]="squared"
-            [class.cp-color-pill-active]="choosenColor === colorValue" (click)="setColor(colorValue)"
-            [style.background]="colorValue">
-          </div>
-          <div class="cp-color-pill cp-color-pill-drop" (click)="isPalette = false;">
-            <svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(90deg)" width="32" height="32" fill="#d9d9d9" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
-                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
-              </svg>
-          </div>
+      }
+      <!--  -->
+      @if (mode === 'basic') {
+        <div class="cp-colors-cavas">
+          @if (!isPalette) {
+            <div class="cp-color-pill-grid">
+              @for (colorValue of colors; track colorValue; let pIndex = $index) {
+                <div class="cp-color-pill"
+                  [class.ngx-palette-squared]="squared"
+                  [class.cp-color-pill-active]="choosenColor === colorValue.preview"
+                  (click)="paletteIndex = pIndex;isPalette = true" [style.background]="colorValue.preview">
+                </div>
+              }
+            </div>
+          }
+          @if (isPalette) {
+            <div class="cp-color-pill-grid">
+              @for (colorValue of colors[paletteIndex]['variants']; track colorValue; let cIndex = $index) {
+                <div class="cp-color-pill"
+                  [class.ngx-palette-squared]="squared"
+                  [class.cp-color-pill-active]="choosenColor === colorValue" (click)="setColor(colorValue)"
+                  [style.background]="colorValue">
+                </div>
+              }
+              <div class="cp-color-pill cp-color-pill-drop" (click)="isPalette = false;">
+                <svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(90deg)" width="32" height="32" fill="#d9d9d9" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                </svg>
+              </div>
+            </div>
+          }
         </div>
-      </div>
+      }
       <!--  -->
       <div class="cp-color-actions" [style.background]="choosenColor">
         <button class="cp-color-button cp-select-button" [class.ngx-palette-squared]="squared">
           {{choosenColor}}
         </button>
-       <div></div>
+        <div></div>
         <button class="cp-color-button cp-select-button" (click)="setCoreColor()" [class.ngx-palette-squared]="squared">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5cb85c" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-            </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5cb85c" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg>
         </button>
         <button class="cp-color-button cp-cancel-button" (click)="discardCoreColor();" [class.ngx-palette-squared]="squared">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d9534f" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-            </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d9534f" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+          </svg>
         </button>
       </div>
     </div>

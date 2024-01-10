@@ -2,7 +2,8 @@ import { Directive, ElementRef, EventEmitter, Input, Output } from '@angular/cor
 import { META } from './META';
 
 @Directive({
-  selector: '[NgxDefaultImage]'
+    selector: '[NgxDefaultImage]',
+    standalone: true
 })
 export class NgxDefaultImageDirective {
 

@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 import { CURSOR } from "./CURSOR";
+import { NgxCursorHoverDirective } from '../../../../projects/ngx-cursor-hover/src/lib/ngx-cursor-hover.directive';
+
 
 @Component({
-  selector: 'app-ngx-cursor-hover',
-  templateUrl: './ngx-cursor-hover.component.html',
-  styleUrls: ['./ngx-cursor-hover.component.scss']
+    selector: 'app-ngx-cursor-hover',
+    templateUrl: './ngx-cursor-hover.component.html',
+    styleUrls: ['./ngx-cursor-hover.component.scss'],
+    standalone: true,
+    imports: [NgxCursorHoverDirective]
 })
 export class NgxCursorHoverComponent {
   public cursors: any[] = CURSOR;

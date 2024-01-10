@@ -2,9 +2,10 @@ import { Component, OnInit, Input } from '@angular/core';
 type mode = "primary" | "success" | "danger" | "info" | "warning";
 
 @Component({
-  selector: 'ngx-just-alert',
-  templateUrl: './just-alert.component.html',
-  styleUrls: ['./just-alert.component.css'],
+    selector: 'ngx-just-alert',
+    templateUrl: './just-alert.component.html',
+    styleUrls: ['./just-alert.component.css'],
+    standalone: true,
 })
 export class JustAlertComponent implements OnInit {
   textColor: string;
