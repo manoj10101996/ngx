@@ -9,67 +9,53 @@
     "test": "ng test",
     "build:ngx-default-image": "ng build ngx-default-image --configuration production",
     "publish:ngx-default-image": "cd dist/ngx-default-image && npm publish",
-
     "build:ngx-resize-element": "ng build ngx-resize-element --configuration production",
     "publish:ngx-resize-element": "cd dist/ngx-resize-element && npm publish",
-
     "build:ngx-alert-message": "ng build ngx-alert-message --configuration production",
     "publish:ngx-alert-message": "cd dist/ngx-alert-message && npm publish",
-
     "build:ngx-array": "ng build ngx-array --configuration production",
     "publish:ngx-array": "cd dist/ngx-array && npm publish",
-
     "build:ngx-check-permission": "ng build ngx-check-permission --configuration production",
     "publish:ngx-check-permission": "cd dist/ngx-check-permission && npm publish",
-
     "build:ngx-color-converter": "ng build ngx-color-converter --configuration production",
     "publish:ngx-color-converter": "cd dist/ngx-color-converter && npm publish",
-
     "build:ngx-device-info": "ng build ngx-device-info --configuration production",
     "publish:ngx-device-info": "cd dist/ngx-device-info && npm publish",
-
     "build:ngx-logs": "ng build ngx-logs --configuration production",
     "publish:ngx-logs": "cd dist/ngx-logs && npm publish",
-
     "build:ngx-random": "ng build ngx-random --configuration production",
     "publish:ngx-random": "cd dist/ngx-random && npm publish",
-
     "build:ngx-strings": "ng build ngx-strings --configuration production",
     "publish:ngx-strings": "cd dist/ngx-strings && npm publish",
-
     "build:ngx-tags-input-box": "ng build ngx-tags-input-box --configuration production",
     "publish:ngx-tags-input-box": "cd dist/ngx-tags-input-box && npm publish",
-
     "build:ngx-toast-notify": "ng build ngx-toast-notify --configuration production",
     "publish:ngx-toast-notify": "cd dist/ngx-toast-notify && npm publish",
-
     "build:ngx-slight-scroll": "ng build ngx-slight-scroll --configuration production",
     "publish:ngx-slight-scroll": "cd dist/ngx-slight-scroll && npm publish",
-
     "build:ngx-cursor-hover": "ng build ngx-cursor-hover --configuration production",
     "publish:ngx-cursor-hover": "cd dist/ngx-cursor-hover && npm publish",
-
     "build:ngx-color-palette": "ng build ngx-color-palette --configuration production",
     "publish:ngx-color-palette": "cd dist/ngx-color-palette && npm publish"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^15.2.0",
-    "@angular/common": "^15.2.0",
-    "@angular/compiler": "^15.2.0",
-    "@angular/core": "^15.2.0",
-    "@angular/forms": "^15.2.0",
-    "@angular/platform-browser": "^15.2.0",
-    "@angular/platform-browser-dynamic": "^15.2.0",
-    "@angular/router": "^15.2.0",
+    "@angular/animations": "^17.0.8",
+    "@angular/common": "^17.0.8",
+    "@angular/compiler": "^17.0.8",
+    "@angular/core": "^17.0.8",
+    "@angular/forms": "^17.0.8",
+    "@angular/platform-browser": "^17.0.8",
+    "@angular/platform-browser-dynamic": "^17.0.8",
+    "@angular/router": "^17.0.8",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.12.0"
+    "zone.js": "~0.14.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^15.2.6",
-    "@angular/cli": "~15.2.6",
-    "@angular/compiler-cli": "^15.2.0",
+    "@angular-devkit/build-angular": "^17.0.9",
+    "@angular/cli": "~17.0.9",
+    "@angular/compiler-cli": "^17.0.8",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.5.0",
     "karma": "~6.4.0",
@@ -77,7 +63,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "ng-packagr": "^15.2.2",
-    "typescript": "~4.9.4"
+    "ng-packagr": "^17.0.3",
+    "typescript": "~5.2.2"
   }
 }
