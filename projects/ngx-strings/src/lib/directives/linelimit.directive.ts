@@ -1,7 +1,8 @@
 import { Directive, ElementRef, Renderer2, Input, OnInit } from '@angular/core';
 
 @Directive({
-  selector: '[ngxLineLimit]',
+    selector: '[ngxLineLimit]',
+    standalone: true,
 })
 export class LinelimitDirective implements OnInit {
   @Input() lines: string;

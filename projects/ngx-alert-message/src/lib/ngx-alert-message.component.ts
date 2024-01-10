@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-ngx-alert-message',
-  template: `
+    selector: 'lib-ngx-alert-message',
+    template: `
     <p>
       ngx-alert-message works!
     </p>
   `,
-  styles: [
-  ]
+    styles: [],
+    standalone: true
 })
 export class NgxAlertMessageComponent {
 

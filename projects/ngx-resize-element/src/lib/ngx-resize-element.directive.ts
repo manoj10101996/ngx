@@ -1,7 +1,8 @@
 import { Directive, ElementRef } from '@angular/core';
 
 @Directive({
-  selector: '[ngxResize]'
+    selector: '[ngxResize]',
+    standalone: true
 })
 export class NgxResizeElementDirective {
   public element: HTMLElement;

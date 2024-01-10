@@ -1,10 +1,13 @@
 import { Component, EventEmitter, Input } from '@angular/core';
+
 type mode = "primary" | "success" | "danger" | "info" | "warning" | "light";
 
 @Component({
-  selector: 'ngx-tags-input',
-  templateUrl: './ngx-tags.component.html',
-  styleUrls: ['./ngx-tags.component.css']
+    selector: 'ngx-tags-input',
+    templateUrl: './ngx-tags.component.html',
+    styleUrls: ['./ngx-tags.component.css'],
+    standalone: true,
+    imports: []
 })
 export class NgxTagsComponent {
   tagsChange: EventEmitter<any>;

@@ -1,7 +1,8 @@
 import { Directive, Input, ElementRef, Renderer2 } from '@angular/core';
 
 @Directive({
-  selector: '[ngxEmailSlicer]',
+    selector: '[ngxEmailSlicer]',
+    standalone: true,
 })
 export class EmailcutDirective {
   @Input() invalid: string;

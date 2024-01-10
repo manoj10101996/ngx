@@ -3,10 +3,12 @@
     (change)="add($event)" [style.borderColor]="color" [placeholder]="placeholder" />
   <div class="ngx-tags-extra">
     <div>
-      <span class="ngx-tags-label" [class.ngx-tags-label-rounded]="rounded" [style.backgroundColor]="color"
-        *ngFor="let item of tags; index as i">
-        {{ item }} <span (click)="remove(i)" class="ngx-tag-remove">&times;</span>
-      </span>
+      @for (item of tags; track item; let i = $index) {
+        <span class="ngx-tags-label" [class.ngx-tags-label-rounded]="rounded" [style.backgroundColor]="color"
+          >
+          {{ item }} <span (click)="remove(i)" class="ngx-tag-remove">&times;</span>
+        </span>
+      }
     </div>
   </div>
 </div>

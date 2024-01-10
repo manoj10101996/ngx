@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { NgxToastNotifyService } from 'projects/ngx-toast-notify/src/public-api';
 
 @Component({
-  selector: 'app-ngx-toast-notify',
-  templateUrl: './ngx-toast-notify.component.html',
-  styleUrls: ['./ngx-toast-notify.component.scss']
+    selector: 'app-ngx-toast-notify',
+    templateUrl: './ngx-toast-notify.component.html',
+    styleUrls: ['./ngx-toast-notify.component.scss'],
+    standalone: true
 })
 export class NgxToastNotifyComponent {
 

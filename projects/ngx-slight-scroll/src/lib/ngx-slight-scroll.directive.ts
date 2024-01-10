@@ -1,7 +1,8 @@
 import { AfterViewInit, EventEmitter, Directive, ElementRef, Input, Output } from "@angular/core";
 
 @Directive({
-  selector: "[ngxSlimScroll]"
+    selector: "[ngxSlimScroll]",
+    standalone: true
 })
 export class NgxSlightScrollDirective implements AfterViewInit {
   @Input() maxHeight: string;

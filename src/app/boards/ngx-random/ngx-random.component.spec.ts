@@ -8,8 +8,8 @@ describe('NgxRandomComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgxRandomComponent ]
-    })
+    imports: [NgxRandomComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(NgxRandomComponent);

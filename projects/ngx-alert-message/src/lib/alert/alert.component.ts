@@ -3,9 +3,10 @@ import { Component, OnInit, Input } from '@angular/core';
 
 type mode = "primary" | "success" | "danger" | "info" | "warning";
 @Component({
-  selector: 'ngx-alert',
-  templateUrl: './alert.component.html',
-  styleUrls: ['./alert.component.css'],
+    selector: 'ngx-alert',
+    templateUrl: './alert.component.html',
+    styleUrls: ['./alert.component.css'],
+    standalone: true,
 })
 export class AlertComponent implements OnInit {
   textColor: string;

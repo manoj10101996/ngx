@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { NgxLogsService } from 'projects/ngx-logs/src/public-api';
 
 @Component({
-  selector: 'app-ngx-logs',
-  templateUrl: './ngx-logs.component.html',
-  styleUrls: ['./ngx-logs.component.scss']
+    selector: 'app-ngx-logs',
+    templateUrl: './ngx-logs.component.html',
+    styleUrls: ['./ngx-logs.component.scss'],
+    standalone: true
 })
 export class NgxLogsComponent {
 

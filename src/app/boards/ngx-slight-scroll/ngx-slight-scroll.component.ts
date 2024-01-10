@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
+import { NgxSlightScrollDirective } from '../../../../projects/ngx-slight-scroll/src/lib/ngx-slight-scroll.directive';
+
 
 @Component({
-  selector: 'app-ngx-slight-scroll',
-  templateUrl: './ngx-slight-scroll.component.html',
-  styleUrls: ['./ngx-slight-scroll.component.scss']
+    selector: 'app-ngx-slight-scroll',
+    templateUrl: './ngx-slight-scroll.component.html',
+    styleUrls: ['./ngx-slight-scroll.component.scss'],
+    standalone: true,
+    imports: [NgxSlightScrollDirective]
 })
 export class NgxSlightScrollComponent {
   public list: any[] = [];

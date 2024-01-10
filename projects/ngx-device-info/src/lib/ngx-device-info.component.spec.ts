@@ -8,8 +8,8 @@ describe('NgxDeviceInfoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgxDeviceInfoComponent ]
-    })
+    imports: [NgxDeviceInfoComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(NgxDeviceInfoComponent);
