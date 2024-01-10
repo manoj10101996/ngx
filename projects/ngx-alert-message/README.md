@@ -2,25 +2,33 @@
 
 # Alert message notifier
 
+## For Angular 17 + (standalone component)
+
 [![](https://data.jsdelivr.com/v1/package/npm/ngx-alert-message/badge)](https://www.jsdelivr.com/package/npm/ngx-alert-message)
 
 Alert component for angular projects. Creative alert message with mutiple color variance.
 
-[<img src="https://github.com/manoj10101996/resources/blob/main/ngx-default-image-advertise.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-default-image)
+[<img src="https://github.com/manoj10101996/resources/blob/main/ngx-alert-message-advertise.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-alert-message)
 
 ## Import
 
-Import the module on your `app.module.ts` file as follow.
+Import the module on your `your-component.component.ts` file as follow.
 
-`import { NgxAlertMessageModule } from "ngx-alert-message";`
+`import { AlertComponent, JustAlertComponent } from 'ngx-alert-message';`
 
 Then import the module as follow on imports array
 
-> NgxAlertMessageModule
+`@Component({
+  selector: '...',
+  templateUrl: '...',
+  styleUrls: ['...'],
+  standalone: true,
+  imports: [AlertComponent, JustAlertComponent]
+})`
 
 ## Using
 
-After importing this library with `npm install ngx-alert-message`, go to the component which is declared under `app.module.ts` and integrate as below.
+After importing this library with `npm install ngx-alert-message`,
 
 ## just alert module
 
