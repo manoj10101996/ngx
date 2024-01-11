@@ -20,17 +20,19 @@ Creative tags input with multiple color variance and limitable tag range.
 
 ## Import
 
-Import the module on your `app.module.ts` file as follow.
+Import the module on your `your-component.component.ts` file as follow.
 
-```TS
-import { NgxTagsModule} from "ngx-tags-input-box";
-```
+`import { NgxTagsComponent } from 'ngx-tags-input-box';`
 
 Then import the module as follow on imports array
 
-```TS
-NgxTagsModule
-```
+`@Component({
+  selector: '...',
+  templateUrl: '...',
+  styleUrls: ['...'],
+  standalone: true,
+  imports: [NgxTagsComponent]
+})`
 
 Add this into your .html file of your component
 
@@ -84,7 +86,7 @@ Add css for above css _class_ in order to modify the input.
 ## Inputs & Variants
 
 This are the methods available with ngx-tags-input-box use it as per your requirement:
- 
+
 - mode : (required) value should be `primary | success | danger | info | warning | light`
 
 - limit : (required) value should be `0 - n` (default 25)
