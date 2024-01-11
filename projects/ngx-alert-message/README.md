@@ -18,13 +18,15 @@ Import the module on your `your-component.component.ts` file as follow.
 
 Then import the module as follow on imports array
 
-`@Component({
+```
+@Component({
   selector: '...',
   templateUrl: '...',
   styleUrls: ['...'],
   standalone: true,
   imports: [AlertComponent, JustAlertComponent]
-})`
+})
+```
 
 ## Using
 
