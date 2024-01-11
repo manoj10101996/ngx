@@ -2,6 +2,8 @@
 
 # Welcome to NGX-TAGS-INPUT-BOX!
 
+## For Angular 17 + (standalone component)
+
 [![ngx-tags-input-box](https://img.shields.io/npm/dm/ngx-tags-input-box.svg)](https://npmjs.org/package/ngx-tags-input-box)
 [![npm version](https://badge.fury.io/js/ngx-tags-input-box.svg)](https://badge.fury.io/js/ngx-tags-input-box)
 [![](https://data.jsdelivr.com/v1/package/npm/ngx-tags-input-box/badge)](https://www.jsdelivr.com/package/npm/ngx-tags-input-box)
@@ -26,13 +28,15 @@ Import the module on your `your-component.component.ts` file as follow.
 
 Then import the module as follow on imports array
 
-`@Component({
+```TS
+@Component({
   selector: '...',
   templateUrl: '...',
   styleUrls: ['...'],
   standalone: true,
   imports: [NgxTagsComponent]
-})`
+})
+```
 
 Add this into your .html file of your component
 
