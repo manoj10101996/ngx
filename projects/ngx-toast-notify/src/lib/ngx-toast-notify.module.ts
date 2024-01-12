@@ -5,7 +5,6 @@ import {
   SkipSelf,
 } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ngxToastNotifyConfig } from './ngx-toast-notify.service';
 
 @NgModule({
   declarations: [],
@@ -19,14 +18,5 @@ export class NgxToastNotifyModule {
         'NgxToastNotifyModule is already loaded. Import it in the AppModule only'
       );
     }
-  }
-
-  static forRoot(
-    config: ngxToastNotifyConfig
-  ): ModuleWithProviders<NgxToastNotifyModule> {
-    return {
-      ngModule: NgxToastNotifyModule,
-      providers: [{ provide: ngxToastNotifyConfig, useValue: config }],
-    };
   }
 }

@@ -1,9 +1,9 @@
 {
   "name": "ngx-color-palette",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "peerDependencies": {
-    "@angular/common": "^15.2.0",
-    "@angular/core": "^15.2.0"
+    "@angular/common": "^17.0.9",
+    "@angular/core": "^17.0.9"
   },
   "description": "Angular library which provides color picker functionality to your angular application.",
   "dependencies": {

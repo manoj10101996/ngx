@@ -28,6 +28,20 @@ Then import the module as follow on imports array
 })
 ```
 
+## For animation
+
+```TS
+import { provideAnimations } from '@angular/platform-browser/animations';
+
+bootstrapApplication(AppComponent, {
+  providers: [
+    importProvidersFrom(BrowserModule),
+    provideAnimations() // Import this
+    ],
+}).
+catch((err) => console.error(err));
+```
+
 ## Using
 
 After importing this library with `npm install ngx-alert-message`,
