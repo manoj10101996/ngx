@@ -2,18 +2,19 @@ import { Component, OnInit, Input } from '@angular/core';
 type mode = "primary" | "success" | "danger" | "info" | "warning";
 
 @Component({
-    selector: 'ngx-just-alert',
-    templateUrl: './just-alert.component.html',
-    styleUrls: ['./just-alert.component.css'],
-    standalone: true,
+  selector: 'ngx-just-alert',
+  templateUrl: './just-alert.component.html',
+  styleUrls: ['../alert.scss'],
+  standalone: true,
 })
 export class JustAlertComponent implements OnInit {
   textColor: string;
-  @Input() mode: mode;
-  @Input() close: any;
-  @Input() bold: any;
-  @Input() text: any;
-  @Input() disabled: any;
+
+  @Input() mode: mode = "success";
+  @Input() close: boolean = true;
+  @Input() bold: boolean = false;
+  @Input() text: any = "ngx-just-alert-message";
+  @Input() disabled: boolean = false;
 
   public color: string;
 
@@ -31,7 +32,10 @@ export class JustAlertComponent implements OnInit {
     } else {
       this.color = 'white';
       this.textColor = 'black';
-      this.bold = 'true';
+      this.bold = true;
     }
+
+    console.log(this.mode, this.color);
+
   }
 }

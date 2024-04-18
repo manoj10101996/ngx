@@ -3,22 +3,23 @@ import { Component, OnInit, Input } from '@angular/core';
 
 type mode = "primary" | "success" | "danger" | "info" | "warning";
 @Component({
-    selector: 'ngx-alert',
-    templateUrl: './alert.component.html',
-    styleUrls: ['./alert.component.css'],
-    standalone: true,
+  selector: 'ngx-alert',
+  templateUrl: './alert.component.html',
+  styleUrls: ['../alert.scss'],
+  standalone: true,
 })
 export class AlertComponent implements OnInit {
   textColor: string;
-  @Input() mode: mode;
-  @Input() close: any;
-  @Input() bold: any;
-  @Input() text: any;
-  @Input() disabled: any;
+  @Input() mode: mode = "success";
+  @Input() close: boolean = true;
+  @Input() bold: boolean = false;
+  @Input() text: any = "ngx-alert-message";
+  @Input() disabled: boolean = false;
 
   public color: string;
 
   ngOnInit(): void {
+
     if (this.mode === 'success') {
       this.color = 'green';
     } else if (this.mode === 'primary') {
@@ -32,7 +33,7 @@ export class AlertComponent implements OnInit {
     } else {
       this.color = 'white';
       this.textColor = 'black';
-      this.bold = 'true';
+      this.bold = true;
     }
   }
 }

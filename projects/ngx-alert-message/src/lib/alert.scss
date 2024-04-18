@@ -1,0 +1,27 @@
+.ngx-alert-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 56px;
+  margin-bottom: .5rem;
+
+  .ngx-alert-text {
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .ngx-alert-close {
+    width: 56px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.ngx-alert-container-extended {
+  .ngx-alert-text {
+    color: white;
+  }
+}
