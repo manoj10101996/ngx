@@ -1,6 +1,6 @@
 {
   "name": "ngx-alert-message",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "author": {
     "name": "Manojkumar Muthukumar",
     "email": "manoj1010196@gmail.com"
@@ -22,7 +22,21 @@
   "keywords": [
     "angular",
     "ngx",
-    "ng9",
+    "alert-message",
+    "notify",
+    "notifier",
+    "ng",
+    "message",
+    "toast",
+    "component",
+    "primary",
+    "info",
+    "warning",
+    "success",
+    "show-alert",
+    "danger",
+    "bootstrap",
+    "beforepost",
     "star",
     "rating",
     "ngx-alert-message",
