@@ -6,7 +6,7 @@
 
 
 .ngx-tags-input {
-  padding: 7.5px 10px;
+  padding: 7.5px 12.5px;
   margin-bottom: 5px;
   width: 100%;
   border: 1.5px solid lightslategray;
@@ -26,7 +26,7 @@
 }
 
 .ngx-tags-label {
-  padding: 7.5px 10px;
+  padding: 7.5px;
   background-color: #6495ed;
   border-radius: 5px;
   margin-right: 5px;
@@ -40,6 +40,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
+  margin-bottom: .25rem;
 }
 
 .ngx-tags-input-rounded,
@@ -57,14 +59,10 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: .5rem;
+  margin-top: .25rem;
 }
 
-.ngx-tag-remove {
-  font-weight: bold;
-  padding-left: 1rem;
-  padding-right: .25rem;
-}
+.ngx-tag-remove {}
 
 .ngx-tag-container {
   margin: 1rem 0;
