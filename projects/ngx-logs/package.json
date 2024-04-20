@@ -7,8 +7,8 @@
   "description": "A Web console is a tool which is mainly used to log information associated with a web page like: network requests, JavaScript, security errors, warnings, CSS etc. It enables us to interact with a web page by executing JavaScript expression in the contents of the page.",
   "version": "3.0.5",
   "peerDependencies": {
-    "@angular/common": "^15.2.0",
-    "@angular/core": "^15.2.0"
+    "@angular/common": "^17.3.5",
+    "@angular/core": "^17.3.5"
   },
   "dependencies": {
     "tslib": "^2.3.0"

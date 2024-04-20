@@ -36,7 +36,22 @@
     "build:ngx-cursor-hover": "ng build ngx-cursor-hover --configuration production",
     "publish:ngx-cursor-hover": "cd dist/ngx-cursor-hover && npm publish",
     "build:ngx-color-palette": "ng build ngx-color-palette --configuration production",
-    "publish:ngx-color-palette": "cd dist/ngx-color-palette && npm publish"
+    "publish:ngx-color-palette": "cd dist/ngx-color-palette && npm publish",
+    "update:ngx-default-image": "cd projects/ngx-default-image && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
+    "update:ngx-resize-element": "cd projects/ngx-resize-element && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
+    "update:ngx-alert-message": "cd projects/ngx-alert-message && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
+    "update:ngx-array": "cd projects/ngx-array && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
+    "update:ngx-check-permission": "cd projects/ngx-check-permission && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
+    "update:ngx-color-converter": "cd projects/ngx-color-converter && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
+    "update:ngx-device-info": "cd projects/ngx-device-info && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
+    "update:ngx-logs": "cd projects/ngx-logs && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
+    "update:ngx-random": "cd projects/ngx-random && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
+    "update:ngx-strings": "cd projects/ngx-strings && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
+    "update:ngx-tags-input-box": "cd projects/ngx-tags-input-box && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
+    "update:ngx-toast-notify": "cd projects/ngx-toast-notify && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
+    "update:ngx-slight-scroll": "cd projects/ngx-slight-scroll && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
+    "update:ngx-cursor-hover": "cd projects/ngx-cursor-hover && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
+    "update:ngx-color-palette": "cd projects/ngx-color-palette && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty"
   },
   "private": true,
   "dependencies": {

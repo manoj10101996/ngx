@@ -42,28 +42,27 @@ Add this into your .html file of your component
 
 ```HTML
 <div>
-  <ngx-tags-input [limit]="10" [placeholder]="'Add Tags...'" [mode]="'success'" [tags]="tags" [rounded]="rounded"
-    [disabled]="disabled" (tagsChange)="displayTags($event)"></ngx-tags-input>
+  <ngx-tags-input [limit]="10" [placeholder]="'Add Tags...'" [mode]="'success'" [tags]="tags" [rounded]="rounded" [distinct]="true" [disabled]="disabled" (tagsChange)="displayTags($event)"></ngx-tags-input>
 </div>
 <div>
   <ngx-tags-input [limit]="10" [placeholder]="'Add Tags...'" [mode]="'primary'" [tags]="tags" [rounded]="rounded"
-    [disabled]="disabled" (tagsChange)="displayTags($event)"></ngx-tags-input>
+    [distinct]="true" [disabled]="disabled" (tagsChange)="displayTags($event)"></ngx-tags-input>
 </div>
 <div>
   <ngx-tags-input [limit]="10" [placeholder]="'Add Tags...'" [mode]="'info'" [tags]="tags" [rounded]="rounded"
-    [disabled]="disabled" (tagsChange)="displayTags($event)"></ngx-tags-input>
+   [distinct]="true"  [disabled]="disabled" (tagsChange)="displayTags($event)"></ngx-tags-input>
 </div>
 <div>
   <ngx-tags-input [limit]="10" [placeholder]="'Add Tags...'" [mode]="'warning'" [tags]="tags" [rounded]="rounded"
-    [disabled]="disabled" (tagsChange)="displayTags($event)"></ngx-tags-input>
+   [distinct]="true"  [disabled]="disabled" (tagsChange)="displayTags($event)"></ngx-tags-input>
 </div>
 <div>
   <ngx-tags-input [limit]="10" [placeholder]="'Add Tags...'" [mode]="'danger'" [tags]="tags" [rounded]="rounded"
-    [disabled]="disabled" (tagsChange)="displayTags($event)"></ngx-tags-input>
+   [distinct]="true"  [disabled]="disabled" (tagsChange)="displayTags($event)"></ngx-tags-input>
 </div>
 <div>
   <ngx-tags-input [limit]="10" [placeholder]="'Add Tags...'" [mode]="'light'" [tags]="tags" [rounded]="rounded"
-    [disabled]="disabled" (tagsChange)="displayTags($event)"></ngx-tags-input>
+   [distinct]="true"  [disabled]="disabled" (tagsChange)="displayTags($event)"></ngx-tags-input>
 </div>
 ```
 
@@ -91,19 +90,21 @@ Add css for above css _class_ in order to modify the input.
 
 This are the methods available with ngx-tags-input-box use it as per your requirement:
 
-- mode : (required) value should be `primary | success | danger | info | warning | light`
+- mode: (required) value should be `primary | success | danger | info | warning | light`
 
-- limit : (required) value should be `0 - n` (default 25)
+- limit: (required) value should be `0 - n` (default 25)
 
-- placeholder : (required) value should be `any text...`
+- placeholder: (required) value should be `any text...`
 
-- header : (optional) value should be `any text...`
+- header: (optional) value should be `any text...`
 
-- tags : (optional) tags [1,2,3,4,5,6] array in order to pass value.
+- tags: (optional) tags [1,2,3,4,5,6] array in order to pass value.
 
 - rounded: true (or) false
 
 - disabled: true (or) false
+
+- distinct: true - do not allow duplicate
 
 ## Code integration
 

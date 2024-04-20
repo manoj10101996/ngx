@@ -3,11 +3,11 @@ import { Component, EventEmitter, Input } from '@angular/core';
 type mode = "primary" | "success" | "danger" | "info" | "warning" | "light";
 
 @Component({
-    selector: 'ngx-tags-input',
-    templateUrl: './ngx-tags.component.html',
-    styleUrls: ['./ngx-tags.component.css'],
-    standalone: true,
-    imports: []
+  selector: 'ngx-tags-input',
+  templateUrl: './ngx-tags.component.html',
+  styleUrls: ['./ngx-tags.component.css'],
+  standalone: true,
+  imports: []
 })
 export class NgxTagsComponent {
   tagsChange: EventEmitter<any>;
@@ -17,6 +17,7 @@ export class NgxTagsComponent {
   @Input() tags: any[];
   @Input() rounded: boolean = false;
   @Input() disabled: boolean = false;
+  @Input() distinct: boolean = true;
 
   public color: string;
   constructor() {
@@ -45,14 +46,18 @@ export class NgxTagsComponent {
   }
 
   add(e: any) {
+    let tagString: string = e.target.value;
     if (this.tags.length < this.limit - 1) {
-      this.tags.push(e.target.value);
+      if (this.distinct && !this.tags.includes(tagString)) {
+        this.tags.push(e.target.value);
+
+        e.target.value = '';
+        this.tagsChange.emit(this.tags);
+      }
     }
     else {
       this.tags[this.limit - 1] = e.target.value;
     }
-    e.target.value = '';
-    this.tagsChange.emit(this.tags);
   }
 
   remove(i: number) {

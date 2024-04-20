@@ -2,8 +2,8 @@
   "name": "ngx-cursor-hover",
   "version": "0.0.3",
   "peerDependencies": {
-    "@angular/common": "^17.0.9",
-    "@angular/core": "^17.0.9"
+    "@angular/common": "^17.3.5",
+    "@angular/core": "^17.3.5"
   },
   "dependencies": {
     "tslib": "^2.3.0"
