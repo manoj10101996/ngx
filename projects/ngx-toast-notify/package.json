@@ -5,10 +5,10 @@
     "email": "manoj1010196@gmail.com"
   },
   "description": "Push notifications to your visitors with a toast, a lightweight and easily customizable alert message with custom theme based.",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "peerDependencies": {
-    "@angular/common": "^17.3.5",
-    "@angular/core": "^17.3.5"
+    "@angular/common": "^17.3.8",
+    "@angular/core": "^17.3.8"
   },
   "dependencies": {
     "tslib": "^2.3.0"
