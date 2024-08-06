@@ -5,10 +5,10 @@
     "email": "manoj1010196@gmail.com"
   },
   "description": "A tags input is a UI component which allows the user to insert multiple entries as tags into an input field. Also known as Tagging/Tokenizing system. You can find this system on most major websites.",
-  "version": "3.1.7",
+  "version": "3.1.9",
   "peerDependencies": {
-    "@angular/common": "^17.3.8",
-    "@angular/core": "^17.3.8"
+    "@angular/common": "^17.3.12",
+    "@angular/core": "^17.3.12"
   },
   "dependencies": {
     "tslib": "^2.3.0"

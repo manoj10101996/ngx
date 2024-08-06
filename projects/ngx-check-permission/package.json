@@ -1,6 +1,6 @@
 {
   "name": "ngx-check-permission",
-  "version": "3.0.7",
+  "version": "3.0.9",
   "peerDependencies": {
     "@angular/common": "^17.3.8",
     "@angular/core": "^17.3.8"
