@@ -1,24 +1,57 @@
-# NgxPrimeColorPicker
+<img width="128px" src="https://github.com/manoj10101996/resources/blob/main/ngx-prime-color-picker.png?raw=true"/>
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+# Welcome to ngx-prime-color-picker!
 
-## Code scaffolding
+[![ngx-prime-color-picker](https://img.shields.io/npm/dm/ngx-prime-color-picker.svg)](https://npmjs.org/package/ngx-prime-color-picker)
+[![npm version](https://badge.fury.io/js/ngx-prime-color-picker.svg)](https://badge.fury.io/js/ngx-prime-color-picker)
+[![](https://data.jsdelivr.com/v1/package/npm/ngx-prime-color-picker/badge)](https://www.jsdelivr.com/package/npm/ngx-prime-color-picker)
+[![ngx-prime-color-picker](https://snyk.io//advisor/npm-package/ngx-prime-color-picker/badge.svg)](https://snyk.io//advisor/npm-package/ngx-prime-color-picker)
 
-Run `ng generate component component-name --project ngx-prime-color-picker` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-prime-color-picker`.
-> Note: Don't forget to add `--project ngx-prime-color-picker` or else it will be added to the default project in your `angular.json` file. 
+`npm i ngx-prime-color-picker`
 
-## Build
+### Precise color selection, effortlessly.
 
-Run `ng build ngx-prime-color-picker` to build the project. The build artifacts will be stored in the `dist/` directory.
+Our tool offers a vast palette of hues at your fingertips. Easily select the perfect color for your designs with precise controls and intuitive interface.
 
-## Publishing
+---
 
-After building your library with `ng build ngx-prime-color-picker`, go to the dist folder `cd dist/ngx-prime-color-picker` and run `npm publish`.
+[<img src="https://github.com/manoj10101996/resources/blob/main/ngx-prime-color-picker-advertise.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-prime-color-picker)
 
-## Running unit tests
+---
 
-Run `ng test ngx-prime-color-picker` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## [<img src="https://github.com/manoj10101996/resources/blob/main/ngx-prime-color-picker-poster.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-prime-color-picker)
 
-## Further help
+## Import
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Import the module on your `app.module.ts` file as follow.
+
+```
+<ngx-prime-color-picker [showConversionTable]="true" [showLightness]="true" [showColorPalette]="true" [showGradient]="true" [showSaturation]="true"></ngx-prime-color-picker>
+```
+
+Then import the module as follow on imports array
+
+```
+import { NgxPrimeColorPickerComponent } from "ngx-prime-color-picker";
+
+
+@Component({
+  selector: '...',
+  standalone: true,
+  imports: [NgxPrimeColorPickerComponent],
+  templateUrl: '...',
+  styleUrl: '...'
+})
+```
+
+## Code integration
+
+To use this package as a service `npm i ngx-prime-color-picker` install this on the root angular project .
+
+> Note: Don't forget to run this commend `npm i ngx-prime-color-picker` on root folder or else it will throw error.
+
+---
+
+[<img src="https://github.com/manoj10101996/resources/blob/main/ngx-prime-color-picker-advertise.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-prime-color-picker)
+
+---
