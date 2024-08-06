@@ -5,7 +5,8 @@
 [![ngx-prime-color-picker](https://img.shields.io/npm/dm/ngx-prime-color-picker.svg)](https://npmjs.org/package/ngx-prime-color-picker)
 [![npm version](https://badge.fury.io/js/ngx-prime-color-picker.svg)](https://badge.fury.io/js/ngx-prime-color-picker)
 [![](https://data.jsdelivr.com/v1/package/npm/ngx-prime-color-picker/badge)](https://www.jsdelivr.com/package/npm/ngx-prime-color-picker)
-[![ngx-prime-color-picker](https://snyk.io//advisor/npm-package/ngx-prime-color-picker/badge.svg)](https://snyk.io//advisor/npm-package/ngx-prime-color-picker)
+
+<!-- [![ngx-prime-color-picker](https://snyk.io//advisor/npm-package/ngx-prime-color-picker/badge.svg)](https://snyk.io//advisor/npm-package/ngx-prime-color-picker) -->
 
 `npm i ngx-prime-color-picker`
 
@@ -25,13 +26,13 @@ Our tool offers a vast palette of hues at your fingertips. Easily select the per
 
 Import the module on your `app.module.ts` file as follow.
 
-```
+```HTML
 <ngx-prime-color-picker [showConversionTable]="true" [showLightness]="true" [showColorPalette]="true" [showGradient]="true" [showSaturation]="true"></ngx-prime-color-picker>
 ```
 
 Then import the module as follow on imports array
 
-```
+```TS
 import { NgxPrimeColorPickerComponent } from "ngx-prime-color-picker";
 
 
