@@ -1,6 +1,8 @@
-<img width="128px" src="https://github.com/manoj10101996/resources/blob/main/ngx-prime-color-picker.png?raw=true"/>
-
 # Welcome to ngx-prime-color-picker!
+
+Our tool offers a vast palette of hues at your fingertips. Easily select the perfect color for your designs with precise controls and intuitive interface.
+
+<img width="128px" src="https://github.com/manoj10101996/resources/blob/main/ngx-prime-color-picker.png?raw=true"/>
 
 [![ngx-prime-color-picker](https://img.shields.io/npm/dm/ngx-prime-color-picker.svg)](https://npmjs.org/package/ngx-prime-color-picker)
 [![npm version](https://badge.fury.io/js/ngx-prime-color-picker.svg)](https://badge.fury.io/js/ngx-prime-color-picker)
