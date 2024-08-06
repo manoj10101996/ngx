@@ -5,10 +5,10 @@
     "email": "manoj1010196@gmail.com"
   },
   "description": "Convert your color value to different variants. Color is the aspect of things that is caused by differing qualities of light being reflected or emitted by them.",
-  "version": "3.0.7",
+  "version": "3.0.9",
   "peerDependencies": {
-    "@angular/common": "^17.3.8",
-    "@angular/core": "^17.3.8"
+    "@angular/common": "^17.3.12",
+    "@angular/core": "^17.3.12"
   },
   "dependencies": {
     "tslib": "^2.3.0"

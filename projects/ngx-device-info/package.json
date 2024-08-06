@@ -1,9 +1,9 @@
 {
   "name": "ngx-device-info",
-  "version": "3.0.8",
+  "version": "3.0.9",
   "peerDependencies": {
-    "@angular/common": "^17.3.8",
-    "@angular/core": "^17.3.8"
+    "@angular/common": "^17.3.12",
+    "@angular/core": "^17.3.12"
   },
   "dependencies": {
     "tslib": "^2.3.0"
