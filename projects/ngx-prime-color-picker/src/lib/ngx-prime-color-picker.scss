@@ -1,0 +1,145 @@
+.crimson-picker {
+  width: 270px;
+  border: 1px solid #d9d9d9;
+  background-color: white;
+
+  .crimson-picker-gradient {
+    position: relative;
+
+    .crimson-picker-gradient-pointer {
+      position: absolute;
+      transform: translate(-50%, -50%);
+
+      cursor: pointer;
+
+      background-color: transparent;
+
+      height: 16px;
+      width: 16px;
+      border-radius: 16px;
+
+      transition: all 0s ease;
+    }
+  }
+
+  .crimson-picker-color-grid {
+    display: grid;
+    grid-template-columns: repeat(360, 1fr);
+    position: relative;
+    padding: 6px;
+    padding-top: 3px;
+
+    .crimson-color-picker-point {
+      height: 32px;
+      cursor: pointer;
+    }
+  }
+
+  .crimson-picker-prime-color-grid {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    position: relative;
+    padding: 6px;
+    padding-top: 0px;
+    // gap: 6px;
+
+    .crimson-prime-color-picker-point {
+      height: 32px;
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+
+  .crimson-picker-color-saturation-container {
+    padding: 6px;
+    padding-top: 0px;
+
+    .crimson-picker-color-saturation-gradient {
+      position: relative;
+      height: 32px;
+    }
+  }
+
+  .crimson-color-picker-range-bar {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    height: 0px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  .crimson-color-picker-range-bar::-webkit-slider-runnable-track {
+    background-color: transparent;
+  }
+
+  .crimson-color-picker-range-bar::-webkit-slider-thumb {
+    background-color: transparent;
+    border: 2px solid white;
+
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+}
+
+.crimson-color-picker-input-data {
+  padding: 6px;
+  padding-top: 0px;
+
+  display: grid;
+  grid-template-columns: 200px auto;
+  align-items: center;
+
+  .crimson-color-picker-input-grid {
+    display: flex;
+    gap: 5px;
+  }
+
+  .crimson-color-picker-input {
+    padding: 6px;
+    font-size: 12px;
+    border: 1px solid #d9d9d9;
+    text-indent: 6px;
+    text-align: center;
+
+    width: 100%;
+    // display: inline-flex;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .crimson-color-picker-text {
+    font-size: 10px;
+    color: rgba($color: #000000, $alpha: 0.75);
+    width: 100%;
+    text-align: end;
+    font-weight: bold;
+  }
+}
+
+.container-padding {
+  padding: 2.5rem;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

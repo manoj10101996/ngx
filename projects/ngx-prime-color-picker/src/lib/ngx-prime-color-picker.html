@@ -1,0 +1,90 @@
+<div class="container-padding" [style.background]="objectColors?.hex">
+  <div class="container-padding">
+    <div class="crimson-picker" id="crimson-picker">
+      <div class="crimson-picker-gradient" [hidden]="!showGradient">
+        <span class="crimson-picker-gradient-pointer" draggable="true" id="picker-gradient-pointer"
+          [style.left.px]="position.offsetX" [style.top.px]="position.offsetY">
+        </span>
+        <canvas [attr.id]="gradintPickerId"></canvas>
+      </div>
+      <div class="crimson-picker-color-grid">
+        @for(color of degrees; let i = $index;track i) {
+        <div class="crimson-color-picker-point" [style.background]="'hsl('+i+', 100%, 50%)'"></div>
+        }
+        <div class="crimson-color-picker-range-container">
+          <input class="crimson-color-picker-range-bar" (input)="createRGBGradient()" [(ngModel)]="hslObject['h']"
+            type="range" min="0" max="359" />
+        </div>
+      </div>
+      @if(objectColors){
+      <div class="crimson-color-picker-input-data">
+        <input type="text" class="crimson-color-picker-input" [value]="objectColors['hex']" readonly />
+        <small class="crimson-color-picker-text">HEX</small>
+      </div>
+      }
+      <!-- primeColors -->
+      <div class="crimson-picker-prime-color-grid" [hidden]="!showColorPalette">
+        @for(color of primeColors; let i = $index;track i) {
+        <div class="crimson-prime-color-picker-point" (click)="hslObject.h = i * 30;createFromPalette();"
+          [style.background]="'hsl('+i * 30+', 100%, 50%)'"></div>
+        }
+      </div>
+      @if(objectColors){
+      <div [hidden]="!showConversionTable">
+        <div class="crimson-color-picker-input-data">
+          <div class="crimson-color-picker-input-grid">
+            <input type="text" class="crimson-color-picker-input" [value]="objectColors['red']" readonly />
+            <input type="text" class="crimson-color-picker-input" [value]="objectColors['green']" readonly />
+            <input type="text" class="crimson-color-picker-input" [value]="objectColors['blue']" readonly />
+          </div>
+          <small class="crimson-color-picker-text">RGB</small>
+        </div>
+        <div class="crimson-color-picker-input-data">
+          <div class="crimson-color-picker-input-grid">
+            <input type="text" class="crimson-color-picker-input" [value]="objectColors['hue']" readonly />
+            <input type="text" class="crimson-color-picker-input" [value]="objectColors['sat']" readonly />
+            <input type="text" class="crimson-color-picker-input" [value]="objectColors['lightness']" readonly />
+          </div>
+          <small class="crimson-color-picker-text">HSL</small>
+        </div>
+        <div class="crimson-color-picker-input-data">
+          <div class="crimson-color-picker-input-grid">
+            <input type="text" class="crimson-color-picker-input" [value]="objectColors['hue']" readonly />
+            <input type="text" class="crimson-color-picker-input" [value]="objectColors['whiteness']" readonly />
+            <input type="text" class="crimson-color-picker-input" [value]="objectColors['blackness']" readonly />
+          </div>
+          <small class="crimson-color-picker-text">HWB</small>
+        </div>
+        <div class="crimson-color-picker-input-data">
+          <div class="crimson-color-picker-input-grid">
+            <input type="text" class="crimson-color-picker-input" [value]="objectColors['cyan']" readonly />
+            <input type="text" class="crimson-color-picker-input" [value]="objectColors['magenta']" readonly />
+            <input type="text" class="crimson-color-picker-input" [value]="objectColors['yellow']" readonly />
+            <input type="text" class="crimson-color-picker-input" [value]="objectColors['black']" readonly />
+          </div>
+          <small class="crimson-color-picker-text">CMYK</small>
+        </div>
+        <div class="crimson-color-picker-input-data">
+          <input type="text" class="crimson-color-picker-input" [value]="objectColors['ncol']" readonly />
+          <small class="crimson-color-picker-text">NCOL</small>
+        </div>
+      </div>
+      }
+
+      <!-- saturationGradientString -->
+      <div class="crimson-picker-color-saturation-container" [hidden]="!showSaturation">
+        <div class="crimson-picker-color-saturation-gradient" [style.background]="saturationGradientString">
+          <input class="crimson-color-picker-range-bar" (input)="createRGBGradient()" [(ngModel)]="hslObject['s']"
+            type="range" min="0" max="100" />
+        </div>
+      </div>
+      <!-- lightnessGradientString -->
+      <div class="crimson-picker-color-saturation-container" [hidden]="!showLightness">
+        <div class="crimson-picker-color-saturation-gradient" [style.background]="lightnessGradientString">
+          <input class="crimson-color-picker-range-bar" (input)="createRGBGradient()" [(ngModel)]="hslObject['l']"
+            type="range" min="0" max="100" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
