@@ -22,6 +22,7 @@
     "build:ngx-slight-scroll": "cd projects/ngx-slight-scroll && npm version patch && cd ../../ && ng build ngx-slight-scroll --configuration production && cd dist/ngx-slight-scroll && npm publish",
     "build:ngx-cursor-hover": "cd projects/ngx-cursor-hover && npm version patch && cd ../../ && ng build ngx-cursor-hover --configuration production && cd dist/ngx-cursor-hover && npm publish",
     "build:ngx-color-palette": "cd projects/ngx-color-palette && npm version patch && cd ../../ && ng build ngx-color-palette --configuration production && cd dist/ngx-color-palette && npm publish",
+    "build:ngx-prime-color-picker": "cd projects/ngx-prime-color-picker && npm version patch && cd ../../ && ng build ngx-prime-color-picker --configuration production && cd dist/ngx-prime-color-picker && npm publish",
     "update:ngx-default-image": "cd projects/ngx-default-image && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
     "update:ngx-resize-element": "cd projects/ngx-resize-element && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
     "update:ngx-alert-message": "cd projects/ngx-alert-message && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
@@ -36,7 +37,8 @@
     "update:ngx-toast-notify": "cd projects/ngx-toast-notify && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
     "update:ngx-slight-scroll": "cd projects/ngx-slight-scroll && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
     "update:ngx-cursor-hover": "cd projects/ngx-cursor-hover && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
-    "update:ngx-color-palette": "cd projects/ngx-color-palette && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty"
+    "update:ngx-color-palette": "cd projects/ngx-color-palette && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty",
+    "update:ngx-prime-color-picker": "cd projects/ngx-prime-color-picker && npm install @angular/common --force --allow-dirty && npm install @angular/core --force --allow-dirty"
   },
   "private": true,
   "dependencies": {

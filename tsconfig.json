@@ -43,6 +43,9 @@
       "ngx-logs": [
         "dist/ngx-logs"
       ],
+      "ngx-prime-color-picker": [
+        "./dist/ngx-prime-color-picker"
+      ],
       "ngx-random": [
         "dist/ngx-random"
       ],

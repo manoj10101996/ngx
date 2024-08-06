@@ -15,6 +15,7 @@ import { NgxTagsInputBoxComponent } from './boards/ngx-tags-input-box/ngx-tags-i
 import { NgxToastNotifyComponent } from './boards/ngx-toast-notify/ngx-toast-notify.component';
 import { NgxCursorHoverComponent } from './boards/ngx-cursor-hover/ngx-cursor-hover.component';
 import { NgxColorPaletteComponent } from './boards/ngx-color-palette/ngx-color-palette.component';
+import { PrimeColorPickerComponent } from './boards/ngx-prime-color-picker/ngx-prime-color-picker.component';
 
 const routes: Routes = [
   { path: '', component: NgxDefaultImageComponent },
@@ -32,7 +33,8 @@ const routes: Routes = [
   { path: 'ngx-toast-notify', component: NgxToastNotifyComponent },
   { path: 'ngx-slight-scroll', component: NgxSlightScrollComponent },
   { path: 'ngx-cursor-hover', component: NgxCursorHoverComponent },
-  { path: 'ngx-color-palette', component: NgxColorPaletteComponent }
+  { path: 'ngx-color-palette', component: NgxColorPaletteComponent },
+  { path: 'ngx-prime-color-picker', component: PrimeColorPickerComponent }
 ];
 
 @NgModule({
