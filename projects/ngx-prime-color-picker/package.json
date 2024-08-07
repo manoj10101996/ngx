@@ -1,11 +1,12 @@
 {
   "name": "ngx-prime-color-picker",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "peerDependencies": {
     "@angular/common": "^17.3.0",
     "@angular/core": "^17.3.0"
   },
   "dependencies": {
+    "ngx-color-converter": "^3.0.9",
     "tslib": "^2.3.0"
   },
   "sideEffects": false
