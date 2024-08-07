@@ -1,24 +1,30 @@
 
 import { NgxColorConverterService } from 'ngx-color-converter';
 
-import { AfterViewInit, Component, inject, Input, ViewEncapsulation } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, EventEmitter, inject, Input, Output, ViewEncapsulation } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgStyle } from '@angular/common';
+import { COLOROBJECT } from '../public-api';
+
 
 @Component({
   selector: 'ngx-prime-color-picker',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule],
+  imports: [FormsModule, ReactiveFormsModule, NgStyle],
   encapsulation: ViewEncapsulation.None,
   templateUrl: './ngx-prime-color-picker.html',
   styleUrls: ['./ngx-prime-color-picker.scss']
 })
 export class NgxPrimeColorPickerComponent implements AfterViewInit {
-
+  @Output() getCurrentColorObject = new EventEmitter();
   @Input() showConversionTable: boolean = true;
   @Input() showSaturation: boolean = true;
   @Input() showLightness: boolean = true;
   @Input() showColorPalette: boolean = true;
   @Input() showGradient: boolean = true;
+  @Input() color: string = '#ff0000';
+
+  public isFreshColor: boolean = true;
 
   public gradintPickerId: string = 'color-canvas-' + (Math.random() + 1).toString(36).substring(7);
   public position: {
@@ -31,39 +37,32 @@ export class NgxPrimeColorPickerComponent implements AfterViewInit {
   public degrees: number[] = [];
   public primeColors: number[] = [];
 
-  public saturationGradientString = `
-      -webkit-linear-gradient(left,
-        hsla(0, 0%, 50%, 1),
-        hsla(0, 20%, 50%, 1),
-        hsla(0, 40%, 50%, 1),
-        hsla(0, 60%, 50%, 1),
-        hsla(0, 80%, 50%, 1),
-        hsla(0, 100%, 50%, 1))`;
+  public saturationGradientString = ``;
 
-  public lightnessGradientString = `
-      -webkit-linear-gradient(left,
-        hsla(0, 100%, 0%, 1),
-        hsla(0, 100%, 20%, 1),
-        hsla(0, 100%, 40%, 1),
-        hsla(0, 100%, 60%, 1),
-        hsla(0, 100%, 80%, 1),
-        hsla(0, 100%, 100%, 1))`
+  public lightnessGradientString = ``
 
   public hslObject: { h: number, s: number, l: number } = { h: 360, s: 100, l: 50 };
   public canvas: HTMLCanvasElement;
   public context: CanvasRenderingContext2D;
-  public color: string = '#e52222ff';
   public pointer: HTMLDivElement;
 
   protected colors = inject(NgxColorConverterService);
-  public objectColors: any;
+  public objectColors: COLOROBJECT;
 
-  constructor() {
-    this.degrees = Array.from(Array(360).keys());
-    this.primeColors = Array.from(Array(13).keys());
-  }
+  constructor(private cdref: ChangeDetectorRef) { }
 
   ngAfterViewInit(): void {
+    this.degrees = Array.from(Array(360).keys());
+    this.primeColors = Array.from(Array(13).keys());
+
+    this.objectColors = this.colors.toColorObject(this.color);
+
+    this.hslObject.h = this.objectColors.hue;
+    this.hslObject.s = this.objectColors.sat * 100;
+    this.hslObject.l = this.objectColors.lightness * 100;
+
+    this.objectColors['hex'] = this.colors.toHexString(this.objectColors.red, this.objectColors.green, this.objectColors.blue);
+
     this.canvas = document.getElementById(this.gradintPickerId) as HTMLCanvasElement;
     let width: number = 270;
     this.canvas.style.width = width + "px";
@@ -73,8 +72,8 @@ export class NgxPrimeColorPickerComponent implements AfterViewInit {
 
     if (this.context && this.canvas) {
       this.createRGBGradient();
-
       this.canvas.addEventListener('click', (event) => {
+        this.isFreshColor = false;
         this.position.offsetX = event.offsetX;
         this.position.offsetY = event.offsetY;
         this.color = this.bufferToHex(this.context.getImageData(this.position.offsetX, this.position.offsetY, 1, 1).data);
@@ -84,17 +83,21 @@ export class NgxPrimeColorPickerComponent implements AfterViewInit {
       this.pointer = document.getElementById('picker-gradient-pointer') as HTMLDivElement;
 
       this.canvas.addEventListener('dragover', (event) => {
+        this.isFreshColor = false;
         this.position.offsetX = event.offsetX;
         this.position.offsetY = event.offsetY;
         this.color = this.bufferToHex(this.context.getImageData(this.position.offsetX, this.position.offsetY, 1, 1).data);
         this.colorObject();
       });
     }
+
+    this.cdref.detectChanges();
   }
 
   public colorObject() {
     this.objectColors = this.colors.toColorObject(this.color);
     this.objectColors['hex'] = this.colors.toHexString(this.objectColors.red, this.objectColors.green, this.objectColors.blue);
+    this.getCurrentColorObject.emit(this.objectColors);
   }
 
   public bufferToHex(buffer: Uint8ClampedArray) {
@@ -102,7 +105,6 @@ export class NgxPrimeColorPickerComponent implements AfterViewInit {
   }
 
   public createRGBGradient() {
-
     this.saturationGradientString = `
       -webkit-linear-gradient(left,
         hsla(${this.hslObject.h}, 0%, 50%, 1),
@@ -133,6 +135,7 @@ export class NgxPrimeColorPickerComponent implements AfterViewInit {
 
   public fillGradient() {
     const rgb = this.hsl2rgb();
+
     const rgbString = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`;
     // Create linear gradient
     const coreGradient = this.context.createLinearGradient(0, this.canvas.width / 2, this.canvas.width, this.canvas.width / 2);
@@ -152,12 +155,11 @@ export class NgxPrimeColorPickerComponent implements AfterViewInit {
     // Fill rectangle with gradient
     this.context.fillStyle = blackGradient;
     this.context.fillRect(0, 0, this.canvas.width, this.canvas.height);
-
-    this.color = this.bufferToHex(this.context.getImageData(this.position.offsetX, this.position.offsetY, 1, 1).data);
-
-    this.colorObject();
+    if (!this.isFreshColor) {
+      this.color = this.bufferToHex(this.context.getImageData(this.position.offsetX, this.position.offsetY, 1, 1).data);
+      this.colorObject();
+    }
   }
-
 
   public hsl2rgb() {
     let { h, s, l } = this.hslObject;

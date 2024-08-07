@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NgxPrimeColorPickerComponent } from 'ngx-prime-color-picker';
+import { COLOROBJECT, NgxPrimeColorPickerComponent } from 'projects/ngx-prime-color-picker/src/public-api';
+// import { COLOROBJECT, NgxPrimeColorPickerComponent } from 'ngx-prime-color-picker';
 
 @Component({
   selector: 'app-ngx-prime-color-picker',
@@ -10,4 +11,9 @@ import { NgxPrimeColorPickerComponent } from 'ngx-prime-color-picker';
 })
 export class PrimeColorPickerComponent {
 
+  public color = '#ff9800';
+
+  public currentColorObject(event: COLOROBJECT) {
+    console.log('event: ', event);
+  }
 }

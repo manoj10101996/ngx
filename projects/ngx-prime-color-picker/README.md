@@ -32,6 +32,9 @@ Import the module on your `app.module.ts` file as follow.
 
 ```HTML
 <ngx-prime-color-picker
+  [color]="color"
+  (getCurrentColorObject)="currentColorObject($event)"
+
   [showConversionTable]="true"
   [showLightness]="true"
   [showColorPalette]="true"
@@ -40,19 +43,10 @@ Import the module on your `app.module.ts` file as follow.
 ></ngx-prime-color-picker>
 ```
 
-| Bind Variable       | Usage                            | Default |
-| ------------------- | -------------------------------- | ------- |
-| showGradient        | Enables Gradient Picker          | false   |
-| showConversionTable | Enables Color conversion table   | false   |
-| showColorPalette    | Enables Exteneded Color Palettes | false   |
-| showLightness       | Enables Lightness slider         | false   |
-| showSaturation      | Enables Saturation slider        | false   |
-
-Then import the module as follow on imports array
+On Your component file (TS)
 
 ```TS
-import { NgxPrimeColorPickerComponent } from "ngx-prime-color-picker";
-
+import { NgxPrimeColorPickerComponent, COLOROBJECT } from "ngx-prime-color-picker";
 
 @Component({
   selector: '...',
@@ -61,7 +55,54 @@ import { NgxPrimeColorPickerComponent } from "ngx-prime-color-picker";
   templateUrl: '...',
   styleUrl: '...'
 })
+export class YourComponent {
+
+  public color = '#ff9800';
+
+  public currentColorObject(event: COLOROBJECT) {
+    console.log('event: ', event);
+  }
+  // Sample output
+  // {
+  //   "red": 234,
+  //   "green": 155,
+  //   "blue": 36,
+  //   "hue": 36,
+  //   "sat": 0.82,
+  //   "lightness": 0.53,
+  //   "whiteness": 0.14,
+  //   "blackness": 0.08,
+  //   "cyan": 0,
+  //   "magenta": 0.34,
+  //   "yellow": 0.85,
+  //   "black": 0.08,
+  //   "ncol": "R60",
+  //   "opacity": 1,
+  //   "valid": true,
+  //   "hex": "#ea9b24"
+  // }
+
+}
 ```
+
+| Bind Variable       | Usage                            | Default   |
+| ------------------- | -------------------------------- | --------- |
+| color               | Current color / Choosed Color    | '#ff0000' |
+| showGradient        | Enables Gradient Picker          | false     |
+| showConversionTable | Enables Color conversion table   | false     |
+| showColorPalette    | Enables Exteneded Color Palettes | false     |
+| showLightness       | Enables Lightness slider         | false     |
+| showSaturation      | Enables Saturation slider        | false     |
+|                     |                                  |           |
+
+---
+
+| Bind Method                   | Usage                    |
+| ----------------------------- | ------------------------ |
+| getCurrentColorObject($event) | Get changed color object |
+|                               |                          |
+
+---
 
 ## Code integration
 
