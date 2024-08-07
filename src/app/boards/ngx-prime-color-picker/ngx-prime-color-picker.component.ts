@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgxPrimeColorPickerComponent } from "../../../../projects/ngx-prime-color-picker/src/lib/ngx-prime-color-picker.component";
+import { NgxPrimeColorPickerComponent } from 'ngx-prime-color-picker';
 
 @Component({
   selector: 'app-ngx-prime-color-picker',
