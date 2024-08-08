@@ -88,7 +88,6 @@ export class YourComponent {
 | Bind Variable       | Usage                            | Default   |
 | ------------------- | -------------------------------- | --------- |
 | color               | Current color / Choosed Color    | '#ff0000' |
-| showGradient        | Enables Gradient Picker          | false     |
 | showConversionTable | Enables Color conversion table   | false     |
 | showColorPalette    | Enables Exteneded Color Palettes | false     |
 | showLightness       | Enables Lightness slider         | false     |
