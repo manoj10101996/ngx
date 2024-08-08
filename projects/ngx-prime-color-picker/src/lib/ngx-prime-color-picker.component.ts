@@ -24,6 +24,8 @@ export class NgxPrimeColorPickerComponent implements AfterViewInit {
   @Input() showGradient: boolean = true;
   @Input() color: string = '#ff0000';
 
+  public isFocused: boolean = false;
+
   public isFreshColor: boolean = true;
 
   public gradintPickerId: string = 'color-canvas-' + (Math.random() + 1).toString(36).substring(7);
@@ -62,6 +64,7 @@ export class NgxPrimeColorPickerComponent implements AfterViewInit {
     this.hslObject.l = this.objectColors.lightness * 100;
 
     this.objectColors['hex'] = this.colors.toHexString(this.objectColors.red, this.objectColors.green, this.objectColors.blue);
+    this.color = this.colors.toHexString(this.objectColors.red, this.objectColors.green, this.objectColors.blue);
 
     this.canvas = document.getElementById(this.gradintPickerId) as HTMLCanvasElement;
     let width: number = 270;
@@ -97,6 +100,7 @@ export class NgxPrimeColorPickerComponent implements AfterViewInit {
   public colorObject() {
     this.objectColors = this.colors.toColorObject(this.color);
     this.objectColors['hex'] = this.colors.toHexString(this.objectColors.red, this.objectColors.green, this.objectColors.blue);
+    this.color = this.colors.toHexString(this.objectColors.red, this.objectColors.green, this.objectColors.blue);
     this.getCurrentColorObject.emit(this.objectColors);
   }
 
