@@ -17,8 +17,42 @@ Convert your color value to different variants. Color is the aspect of things th
 
 Import the module on your `app.module.ts` file as follow.
 
-```
-import { NgxColorConverterModule} from "ngx-color-converter";
+```TS
+import { NgxColorConverterService, COLOROBJECT } from 'ngx-color-converter';
+
+...
+
+export class YourComponent {
+
+  protected colors = inject(NgxColorConverterService);
+
+  (or)
+
+  constructor(private colors: NgxColorConverterService) {
+    let colorObject:COLOROBJECT = this.colors.toColorObject('#000fff');
+    console.log(colorObject);
+
+    // Sample Output
+    // {
+    //   "red": 234,
+    //   "green": 155,
+    //   "blue": 36,
+    //   "hue": 36,
+    //   "sat": 0.82,
+    //   "lightness": 0.53,
+    //   "whiteness": 0.14,
+    //   "blackness": 0.08,
+    //   "cyan": 0,
+    //   "magenta": 0.34,
+    //   "yellow": 0.85,
+    //   "black": 0.08,
+    //   "ncol": "R60",
+    //   "opacity": 1,
+    //   "valid": true,
+    // }
+  }
+
+}
 ```
 
 Then import the module as follow on imports array
@@ -32,7 +66,7 @@ NgxColorConverterModule
 ## Service
 
 ```
-import { NgxColorConverterService } from 'ngx-color-converter';
+import { NgxColorConverterService, COLOROBJECT } from 'ngx-color-converter';
 
 constructor(private colors: NgxColorConverterService) { }
 ```
@@ -43,16 +77,21 @@ Use reference for logs service in constructor and import it respectively at any 
 
 You can use below methods as part of service by following
 
-```
-this.colors.toColorObject(color);
+```TS
+let colorObject:COLOROBJECT = this.colors.toColorObject('#000fff');
 ```
 
-```
+```TS
 color:any - (hex - name - rgb - hsl - hwb - cmyk - ncol)
 ```
 
-```
+```TS
+import { COLOROBJECT } from 'ngx-color-converter';
+
+...
+
 constructor(private colors: NgxColorConverterService) {
+  let colorObject:COLOROBJECT = this.colors.toColorObject('#000fff');
   console.log(this.colors.toColorObject('#000fff'));
   console.log(this.colors.toColorObject('crimson'));
   console.log(this.colors.toColorObject('rgb(0,0,0)'));
@@ -65,9 +104,9 @@ Which will return converted color object.
 
 With these converted values you can play any method given below. Happy Coding <3
 
-| Method                                                | Arguments                                                | usage                                    |
-| ----------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------- |
-| toColorObject(color)                                  | color:any - (hex - name - rgb - hsl - hwb - cmyk - ncol) | Returns color object of converted values |
+| Method                                                | Arguments                                                | usage       |
+| ----------------------------------------------------- | -------------------------------------------------------- | ----------- |
+| toColorObject(color)                                  | color:any - (hex - name - rgb - hsl - hwb - cmyk - ncol) | COLOROBJECT |
 | hslToRgb(hue, sat, light)                             | hue, sat, light                                          |
 | hwbToRgb(hue, white, black)                           | hue, white, black                                        |
 | cmykToRgb(c, m, y, k)                                 | c, m, y, k                                               |
@@ -77,7 +116,7 @@ With these converted values you can play any method given below. Happy Coding <3
 | rgbToHsl(r , g , b )                                  | r, g, b                                                  |
 | rgbToHwb(r , g , b )                                  | r, g, b                                                  |
 | rgbToCmyk(red , green , blue )                        | red,green,blue                                           |
-| --                                                    | --                                                       | --                                       |
+| --                                                    | --                                                       | --          |
 | toRgbString(red , green , blue )                      |                                                          |
 | toRgbaString(red , green , blue , alpha )             |                                                          |
 | toHwbString(hue , whiteness , blackness )             |                                                          |
@@ -109,4 +148,5 @@ To use this package as a service `npm i ngx-color-converter` install this on the
 ---
 
 ## [<img src="https://github.com/manoj10101996/resources/blob/main/ngx-color-converter-advertise.png?raw=true" width="100%" >](https://www.beforepost.com/package/ngx/ngx-color-converter)
+
 ---

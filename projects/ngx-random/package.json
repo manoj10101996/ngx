@@ -5,7 +5,7 @@
     "email": "manoj1010196@gmail.com"
   },
   "description": "Generates specified length of strings / digits for password | Otp | unique identification purposes",
-  "version": "3.0.9",
+  "version": "3.0.11",
   "peerDependencies": {
     "@angular/common": "^17.3.12",
     "@angular/core": "^17.3.12"

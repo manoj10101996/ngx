@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { COLOROBJECT } from '../public-api';
 
 @Injectable({
   providedIn: 'root',
@@ -562,7 +563,7 @@ export class NgxColorConverterService {
     return this.colorObject(rgb, a, hue, sat);
   }
 
-  public colorObject(rgb: any, a: any, h: any, s: any) {
+  public colorObject(rgb: any, a: any, h: any, s: any): COLOROBJECT {
     let hsl, hwb, cmyk, ncol, color, hue, sat;
     if (!rgb) {
       return this.emptyObject();
@@ -597,7 +598,7 @@ export class NgxColorConverterService {
     return color;
   }
 
-  public emptyObject() {
+  public emptyObject(): COLOROBJECT {
     return {
       red: 0,
       green: 0,

@@ -5,7 +5,7 @@
     "email": "manoj1010196@gmail.com"
   },
   "description": "A Web console is a tool which is mainly used to log information associated with a web page like: network requests, JavaScript, security errors, warnings, CSS etc. It enables us to interact with a web page by executing JavaScript expression in the contents of the page.",
-  "version": "3.0.9",
+  "version": "3.0.11",
   "peerDependencies": {
     "@angular/common": "^17.3.12",
     "@angular/core": "^17.3.12"
