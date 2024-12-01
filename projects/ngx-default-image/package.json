@@ -1,6 +1,6 @@
 {
   "name": "ngx-default-image",
-  "version": "0.2.12",
+  "version": "0.2.13",
   "peerDependencies": {
     "@angular/common": "^17.3.12",
     "@angular/core": "^17.3.12"
