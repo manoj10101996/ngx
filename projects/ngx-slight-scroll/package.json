@@ -1,6 +1,6 @@
 {
   "name": "ngx-slight-scroll",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "peerDependencies": {
     "@angular/common": "^17.3.12",
     "@angular/core": "^17.3.12"

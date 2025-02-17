@@ -1,6 +1,6 @@
 {
   "name": "ngx-resize-element",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "peerDependencies": {
     "@angular/common": "^17.3.12",
     "@angular/core": "^17.3.12"

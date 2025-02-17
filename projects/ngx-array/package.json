@@ -5,7 +5,7 @@
     "email": "manoj1010196@gmail.com"
   },
   "description": "Array class is a global object that is used in the construction of arrays; which are high-level, list-like objects.",
-  "version": "3.0.12",
+  "version": "3.0.14",
   "peerDependencies": {
     "@angular/common": "^17.3.12",
     "@angular/core": "^17.3.12"
