@@ -1,10 +1,10 @@
 {
   "name": "ngx-prime-color-picker",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "Our tool offers a vast palette of hues at your fingertips. Easily select the perfect color for your designs with precise controls and intuitive interface.",
   "peerDependencies": {
-    "@angular/common": "^17.3.12",
-    "@angular/core": "^17.3.12"
+    "@angular/common": "^21.2.13",
+    "@angular/core": "^21.2.13"
   },
   "dependencies": {
     "ngx-color-converter": "^3.0.9",
